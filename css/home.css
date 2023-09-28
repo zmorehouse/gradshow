@@ -2,7 +2,16 @@
 main {
     display:flex;
     flex-direction:column;
-    height:70vh;
+    height:94vh;
+    margin-top:-130px;
+    padding-left:50px;
+    padding-right:50px;
+    justify-content:center;
+    background-color:black;
+}
+
+main > * {
+    color:white;
 }
 
 /* Important Info */
