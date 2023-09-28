@@ -76,6 +76,24 @@ function insertHeader() {
   }
 
 function insertCallToAction() {
-   var content = ``
+   var content = `
+   <div>
+   <h2> Browse Our List Of <span id="highlighttext">2023 Graduates </span></h2>
+   <div id="ctaleft">
+       <hr>
+       <h2> Or, See Their Work In Person! </h2>
+   </div>
+
+</div>
+<div>
+   <button> 
+       See Our Full List of Graduates
+       <i class="fa-solid fa-arrow-right-long"></i>
+   </button>
+   <button> 
+       See Our Full List of Graduates
+       <i class="fa-solid fa-arrow-right-long"></i>
+   </button>
+</div>`
    document.querySelector('.calltoaction').innerHTML = content;
 }

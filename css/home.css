@@ -1,7 +1,11 @@
 /* Main */
+main {
+    display:flex;
+    flex-direction:column;
+    height:70vh;
+}
 
 /* Important Info */
-
 .importantinfo {
     background-color:#BD830E;
     color:white;
@@ -39,7 +43,23 @@
 }
 
 button {
-    width:5%;
+    border-radius:0;
+    border-style:solid;
+    border-width:1px;
+    border-color:white;
+    text-transform:uppercase;
+    font-family:'Bebas Neue';
+    font-size:25px;
+    padding:15px 15px 15px 15px;
+    background-color:black;
+    color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+button i{
+    padding-left:15px;
 }
 
 /* About */
@@ -47,13 +67,17 @@ button {
     background-color:black;
     display:flex;
     flex-direction:row;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:7%;
+    padding-bottom:7%;
     padding-left:50px;
     padding-right:50px;
     border-bottom-style:solid;
-    border-width:5px;
+    border-width:10px;
     border-color:#BD830E;
+}
+
+.about img {
+    width:100%;
 }
 
 .about > * {
@@ -62,4 +86,38 @@ button {
 
 .about > div {
     width:50%;
+}
+
+/* Logo slider section */
+.logoslider {
+    background-color:#2C2C2C;
+    display:flex;
+    flex-direction:row;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+/* Support Our Graduates */
+.support {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:7%;
+    padding-bottom:7%;
+    padding-left:50px;
+    padding-right:50px;
+    text-align:center;
+}
+
+.support p {
+    width:50%;
+}
+
+.supportboxes { 
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-evenly;
 }
