@@ -5,8 +5,6 @@ window.addEventListener('load', insertCallToAction);
 
 function insertHeader() {
     var content = `  
-
-    <header>
     <h1> Gradshow 2023 </h1> 
     <nav>
     <i class="fa-solid fa-bars"></i>
@@ -21,7 +19,6 @@ function insertHeader() {
       </ul>
     </div>
     </nav>
-   </header>
        `;
     document.querySelector('.globalheader').innerHTML = content;
   }
@@ -29,12 +26,12 @@ function insertHeader() {
   function insertFooter() {
     var content = `  
 
-    <footer>
+
     <div> 
         <h2> Gradshow Footer </h2> 
         <p> The Australian National University acknowledges, celebrates and pays our respects to the Ngunnawal and Ngambri people of the Canberra region and to all First Nations Australians on whose traditional lands we meet and work, and whose cultures are among the oldest continuing cultures in human history.
         </p>
-        <p> ANU, 2023 All Rights Reserved | Website by Zac Morehouse </p>
+        <p id="tagline"> ANU, 2023 All Rights Reserved | Website by Zac Morehouse </p>
     </div>
     <div> 
         <h3> Exhibition Info </h3> 
@@ -73,7 +70,7 @@ function insertHeader() {
             </ul>
         </div>
     </div>
-    </footer>
+
        `;
     document.querySelector('.globalfooter').innerHTML = content;
   }

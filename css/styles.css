@@ -1,0 +1,102 @@
+/* Template Styles */
+/* Header & Footer Styling */
+header, footer {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    align-items:center;
+    padding:15px 15px 15px 15px;
+}
+
+footer {
+    align-items:start;
+    background-color:#2C2C2C;
+    border-top-style: solid;
+    border-width:5px;
+    border-color:#BD830E;
+}
+
+footer > * {
+    color:white;    
+}
+
+.navmenupopup {
+    display:none;
+}
+
+footer, h2, h3 {
+    font-size:50px !important;
+}
+
+footer, h4 {
+    font-size:18px !important;
+    margin:0px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+footer > div { 
+width:25%;
+padding:25px;
+}
+
+footer, a {
+    color:white !important;
+}
+
+#tagline {
+    font-size:13px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px)   {
+    footer {
+        flex-wrap:wrap;
+    }
+
+    footer > div { 
+        width:100%;
+        padding:15px;
+
+    }
+
+}
+
+
+/* General Styling */
+
+body {
+    margin:0px;
+}
+ul {
+    list-style-type:none;
+    padding-left:0px;
+    margin:0px;
+}
+
+h1, h2, h3, h4 {
+    font-family:'Bebas Neue';
+    font-size:80px;
+    margin:0px;
+    padding:0px;
+    font-weight:100;
+}
+
+p, a {
+    font-family:'Open Sans';
+    font-size:16px;
+    font-weight:100;
+}
+
+a {
+    font-weight:600;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:black;
+    transform:scale(1);
+}
+
+a:hover {
+    transform:scale(1.1);
+}
