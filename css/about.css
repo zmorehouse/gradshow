@@ -1,0 +1,66 @@
+.headofschool {
+    padding:7% 7% 7% 7%;
+}
+
+.headofschool h2 {
+    font-size:50px;
+}
+
+.headofschool h3 {
+    font-size:20px !important;
+    font-family:'Open Sans';
+    font-weight:600;
+}
+
+.headofschool hr {
+    color:#BD830E;
+    display:none;
+}
+
+.staggered {
+    display:flex;
+    flex-direction:row;
+    gap:2%;
+
+}
+
+.staggered div {
+    width:50%;
+}
+
+#authorbox {
+    display:flex;
+    flex-direction:row;
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px )   {
+    .staggered {
+        flex-wrap: wrap;
+    }
+    .staggered div {
+        width:100% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px)   {
+    .headofschool h2 {
+        font-size:20px !important;
+        font-family:'Open Sans';
+        text-transform:uppercase;
+        font-weight:600;
+    }
+
+    .headofschool h3 {
+        margin-bottom:15px;
+    }
+    
+    .headofschool hr {
+        display:block;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+}

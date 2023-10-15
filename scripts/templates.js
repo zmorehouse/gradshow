@@ -80,7 +80,6 @@ function insertCallToAction() {
    <div>
    <h2> Browse Our List Of <span id="highlighttext">2023 Graduates </span></h2>
    <div id="ctaleft">
-       <hr>
        <h2> Or, See Their Work In Person! </h2>
    </div>
 
@@ -91,7 +90,7 @@ function insertCallToAction() {
        <i class="fa-solid fa-arrow-right-long"></i>
    </button>
    <button> 
-       See Our Full List of Graduates
+       Exhibition Information
        <i class="fa-solid fa-arrow-right-long"></i>
    </button>
 </div>`

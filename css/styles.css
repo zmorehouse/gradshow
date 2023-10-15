@@ -6,7 +6,7 @@ header, footer {
     justify-content:space-between;
     width:100%;
     align-items:center;
-    padding:15px 15px 15px 15px;
+    padding:2% 7% 2% 7%;
 }
 
 footer {
@@ -52,7 +52,7 @@ footer a {
 }
 
 /* Responsive */
-@media only screen and (max-width: 767px)   {
+@media only screen and (max-width: 1024px )   {
     footer {
         flex-wrap:wrap;
     }
@@ -71,8 +71,8 @@ footer a {
     flex-direction:row;
     align-items:center;
     background-color:black;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:7%;
+    padding-right:7%;
     padding-top:2%;
     padding-bottom:2%;
 }
@@ -102,6 +102,7 @@ footer a {
 
 .calltoaction button {
     margin-top:15px;
+    
 }
 
 #ctaleft {
@@ -112,11 +113,35 @@ footer a {
 
 }
 
+
 /* General Styling */
 
 body {
     margin:0px;
+    
 }
+
+
+button {
+    border-radius:0;
+    border-style:solid;
+    border-width:1px;
+    border-color:white;
+    text-transform:uppercase;
+    font-family:'Bebas Neue';
+    font-size:25px;
+    padding:15px 15px 15px 15px;
+    background-color:black;
+    color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+button i{
+    padding-left:15px;
+}
+
 ul {
     list-style-type:none;
     padding-left:0px;
@@ -149,3 +174,27 @@ a {
     color:#BD830E;
 }
 
+.pagetitle {
+    padding-left:7%;
+    padding-right:7%;
+    padding-top:12%;
+    background-color:black;
+    color:white;
+}
+
+@media only screen and (max-width: 480px)   {
+    .pagetitle {
+        padding:7%;
+        padding-top:0px;
+        padding-bottom:0px;
+        background-color:white;
+        color:black;
+        display:flex;
+    }
+
+    .pagetitle h1 {
+        font-size:55px;
+
+    }
+    
+}
