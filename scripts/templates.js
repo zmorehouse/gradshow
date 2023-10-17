@@ -43,11 +43,11 @@ function insertHeader() {
 
       <ul>
          <li> <a href="/"> Home </a> </li>
-         <li> <a href="/"> Graduates </a> </li>
-         <li> <a href="/"> About </a> </li>
-         <li> <a href="/"> Acknowledgements </a> </li>
-         <li> <a href="/"> Support </a> </li>
-         <li> <a href="/"> Contact </a> </li>
+         <li> <a href="/graduates.html"> Graduates </a> </li>
+         <li> <a href="/about.html"> About </a> </li>
+         <li> <a href="/acknowledgements.html"> Acknowledgements </a> </li>
+         <li> <a href="/support.html"> Support </a> </li>
+         <li> <a href="/contact.html"> Contact </a> </li>
       </ul>
 
     </nav>
@@ -110,16 +110,22 @@ function insertFooter() {
 
 function insertCallToAction() {
     var content = `
-   <div>
+   <div class="desktop">
+   <div id="ctaright">
    <h2> Browse Our List Of <span id="highlighttext">2023 Graduates </span></h2>
+   </div>
    <div id="ctaleft">
        <h2> Or, See Their Work In Person! </h2>
    </div>
+    </div>
+    <div class="mobile">
+    <h2> Browse Our List Of <span id="highlighttext">2023 Graduates </span> Or, See Their Work In Person! </h2>
 
-</div>
+    </div>
+
 <div>
    <button> 
-       See Our Full List of Graduates
+       See Our List of Graduates
        <i class="fa-solid fa-arrow-right-long"></i>
    </button>
    <button> 
