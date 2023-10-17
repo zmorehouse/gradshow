@@ -37,6 +37,7 @@ header {
 
 .mainnav ul {
     display:flex;
+    align-items: center;
 }
 
 .mainnav li {
@@ -48,13 +49,24 @@ header {
 
 .mainnav a {
     color:white;
-    font-size:18px;
+    font-size:30px;
+    font-family:'Bebas Neue';
+    font-weight:100;
     
 }
 
 .mainnav li:hover {
     transform:scale(1.10);
     transition:0.4s;
+}
+
+.graduatesbutton {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size:26px;
+    margin-left:10px;
 }
 
 
