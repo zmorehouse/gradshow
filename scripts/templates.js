@@ -37,8 +37,6 @@ function insertHeader() {
   </g>
 </svg>
 
-
-
     <nav>
 
       <ul>

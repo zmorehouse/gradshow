@@ -1,18 +1,15 @@
-.headofschool {
-    padding:7% 7% 7% 7%;
-}
 
-.headofschool h2 {
+.maincontent h2 {
     font-size:50px;
 }
 
-.headofschool h3 {
+.maincontent h3 {
     font-size:20px !important;
     font-family:'Open Sans';
     font-weight:600;
 }
 
-.headofschool hr {
+.maincontent hr {
     color:#BD830E;
     display:none;
 }

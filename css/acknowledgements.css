@@ -1,21 +1,19 @@
-.acknowledgements {
-    padding:7% 7% 7% 7%;
+.maincontent {
     display:flex;
-
 }
 
-.acknowledgements div:nth-of-type(1) {
+.maincontent div:nth-of-type(1) {
     width:60%;
 }
 
-.acknowledgements > div:nth-of-type(2) {
+.maincontent > div:nth-of-type(2) {
     width:40%;
     padding-left:50px;
 }
 
 @media only screen and (max-width: 1024px )   {
 
-    .acknowledgements div:nth-of-type(1) {
+    .maincontent div:nth-of-type(1) {
         width:100%;
     }
 }
