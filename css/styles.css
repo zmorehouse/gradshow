@@ -103,6 +103,7 @@ footer {
     border-color:#BD830E;
     padding-top:50px;
     padding-bottom:50px;
+    gap:25px;
 }
 
 footer > * {
@@ -126,11 +127,15 @@ footer h4 {
 
 footer > div { 
 width:25%;
-padding:25px;
 }
 
 footer a {
     color:white !important;
+}
+
+footer svg {
+    width:75%;
+    height:50px;
 }
 
 #tagline {

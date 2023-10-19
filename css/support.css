@@ -1,0 +1,52 @@
+.maincontent {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+
+.maincontent > div {
+    width:50%;
+}
+
+
+.maincontent h2 {
+    font-size:50px;
+
+}
+
+.supportbox {
+    border-radius:10px;
+    padding:35px;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:white;
+    filter: drop-shadow(5px 5px 5px #00000017);
+    margin:15px;
+    transition:0.4s;
+
+}
+
+.supportbox:hover {
+   transform:translateY(-15px);
+   transition:0.4s;
+}
+
+hr {
+    color:#BD830E;
+    border-style:solid;
+}
+
+.supportbox button {
+    background-color:transparent !important;
+    padding:0px;
+    border-style:none;
+    font-family:'Open Sans';
+    font-size:16px;
+    text-decoration:underline;
+    color:#BD830E;
+}
+
+.opportunitiesfund {
+    background-color:#313131;
+    color:white;
+}
