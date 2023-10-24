@@ -120,3 +120,46 @@ label {
     font-weight:200;
     font-size:16px !important;
 }
+
+
+@media only screen and (max-width: 768px)   {
+    .maincontent {
+        display:flex;
+        flex-wrap:wrap;
+        gap:25px;
+    }
+
+    .maincontent div {
+        width:100%;
+        padding:0px;
+    }
+
+    .contactinfo {
+        border-radius:10px;
+        padding:25px !important;
+        padding-top:50px;
+        padding-bottom:50px;
+        background-color:white;
+        filter: drop-shadow(5px 5px 5px #00000017);
+        transition:0.4s;
+    }
+
+    .exhibitioninfo {
+        padding-top:35px !important;
+        padding-bottom:25px;
+        gap:0px;
+    }
+
+    .exhibitioninfo > * {
+        width:100%;
+
+    }
+
+    .exhibitioninfo p {
+        margin-top:10px !important;
+    }
+
+    .exhibitioninfo i {
+        margin-right:15px;
+    }
+}

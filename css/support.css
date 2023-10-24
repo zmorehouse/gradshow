@@ -50,3 +50,18 @@ hr {
     background-color:#313131;
     color:white;
 }
+
+@media only screen and (max-width: 768px)   {
+    .maincontent {
+        flex-wrap:wrap;
+    }
+
+    .maincontent > div {
+        width:100%;
+    }
+    
+    .supportbox {
+        margin:0px 0px 25px 0px;
+        padding:25px;
+    }
+}

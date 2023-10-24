@@ -33,6 +33,7 @@ header {
     padding-bottom:15px;
     justify-content:space-between;
     align-items:center;
+    z-index:999;
 }
 
 .mainnav ul {
@@ -143,7 +144,7 @@ footer svg {
 }
 
 /* Responsive */
-@media only screen and (max-width: 1024px )   {
+@media only screen and (max-width: 768px)   {
     footer {
         flex-wrap:wrap;
     }
@@ -209,6 +210,21 @@ footer svg {
 
 }
 
+
+.mainnav i {
+    display:none;
+}
+
+.calltoaction .desktop {
+    flex-wrap: wrap !important;
+}
+
+.calltoaction .desktop > div {
+width:100%;
+}
+
+
+
 @media only screen and (max-width: 1024px )   {
     .calltoaction {
         flex-wrap:wrap; 
@@ -225,14 +241,60 @@ footer svg {
         text-align:center;
     }
 
-
-    
     #ctaleft {
         display:block;
     }
 
     .calltoaction > div:nth-of-type(3) { 
         margin-left:0px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 768px )   {
+    
+    .mainnav {
+        background-color:black;
+        width:100%;
+        display:flex;
+        flex-wrap:nowrap;
+        position:fixed;
+        top:0%;
+        justify-content:space-between;
+        overflow:hidden;
+        padding-left:0px;
+        padding-right:0px;
+        border-style:solid;
+        border-width:0px;
+        border-bottom-width:15px !important;
+        border-color:#BD830E;
+    }
+    .mainnav svg {
+        width:40%;
+        padding-left:7%;
+    }
+
+    .mainnav i {
+        display:flex;
+    }
+
+    header {
+        margin:0 !important;
+    }
+
+    .mainnav i {
+        padding-right:7%;
+    }
+
+    .hamburger {
+        display:none;
+    }
+
+    footer svg {
+        width:100%;
+        padding-bottom:25px;
     }
 
 }
@@ -331,7 +393,7 @@ a {
     font-size:100px;
 }
 
-@media only screen and (max-width: 480px)   {
+@media only screen and (max-width: 768px)   {
     .pagetitle {
         padding:7%;
         padding-top:0px;
@@ -339,6 +401,7 @@ a {
         background-color:white;
         color:black;
         display:flex;
+        margin-top:50px;
     }
 
     .pagetitle h1 {
@@ -349,22 +412,28 @@ a {
 }
 
 .desktop {
-    display:block;
+    display:flex;
 }
 
 .mobile {
     display:none;
 }
 
-@media only screen and (max-width: 1024px )   {
+.maincontent {
+    padding:4% 7% 4% 7%;
+}
+
+@media only screen and (max-width: 768px )   {
     .desktop { 
         display:none;
     }
     .mobile {
-        display:block;
+        display:flex;
     }
+
+    
+.maincontent {
+    padding:0% 7% 7% 7% !important;
+}
 }
 
-.maincontent {
-    padding:4% 7% 4% 7%;
-}

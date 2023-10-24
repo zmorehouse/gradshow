@@ -43,7 +43,7 @@
 }
 
 
-@media only screen and (max-width: 480px)   {
+@media only screen and (max-width: 768px)   {
     .headofschool h2 {
         font-size:20px !important;
         font-family:'Open Sans';
@@ -57,7 +57,11 @@
     
     .headofschool hr {
         display:block;
-        padding-top:15px;
-        padding-bottom:15px;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .headofschool > div:nth-of-type(2) {
+        flex-direction:column-reverse;
     }
 }
