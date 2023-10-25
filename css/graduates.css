@@ -1,0 +1,76 @@
+.graduatepage {
+    display:flex;
+    justify-content:space-between;
+}
+
+.graduatepage h2 {
+    font-size: 100px;
+    color:#BD830E;
+}
+
+.maincontent > div {
+    width:50%;
+}
+
+.maincontent > a {
+    width:100%;
+}
+
+.maincontent {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.graduatebuttons {
+    display:flex;
+    flex-wrap:nowrap;
+    gap:15px;
+}
+
+.graduatebuttons button {
+    width:50%;
+}
+
+.graduatebuttons > button:nth-of-type(2)  {
+    background-color:#BD830E;
+}
+
+.graduatebuttons > button:nth-of-type(2):hover  {
+    background-color:black;
+}
+
+
+.artistmeta {
+    border-radius:10px;
+    padding:35px;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:white;
+    filter: drop-shadow(5px 5px 5px #00000017);
+    margin:15px;
+    transition:0.4s;
+
+}
+
+.artiststatement {
+    border-radius:10px;
+    padding:35px;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:#313131;
+    color:white;
+    filter: drop-shadow(5px 5px 5px #00000017);
+    margin:15px;
+    transition:0.4s;
+
+}
+
+.maincontent hr {
+    
+    color:#BD830E
+}
+
+.artwork {
+    margin-right:50px;
+}

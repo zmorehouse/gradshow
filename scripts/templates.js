@@ -168,9 +168,10 @@ function insertFooter() {
     <h3> Quick Links </h3>
     <nav>
         <ul>
-            <li> <a href="https://soad.cass.anu.edu.au/" target="_blank"> ANU SCHOOL OF ART & DESIGN </a> </li>
-            <li> <a href="https://cass.anu.edu.au/" target="_blank"> ANU COLLEGE OF ARTS & SOCIAL SCIENCES </a> </li>
+            <li> <a href="https://soad.cass.anu.edu.au/" target="_blank"> ANU School of Art & Design </a> </li>
+            <li> <a href="https://cass.anu.edu.au/" target="_blank"> ANU College of Arts </a> </li>
             <li> <a href="/about.html"> About Gradshow 2023 </a> </li>
+            <li> <a href="/contact.html"> Events </a> </li>
             <li> <a href="/contact.html"> Contact </a> </li>
             <li> <a href="/acknowledgements.html"> Acknowledgements </a> </li>
             <li> <a href="/sitemap.html"> Sitemap </a> </li>
