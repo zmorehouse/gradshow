@@ -11,7 +11,7 @@ function insertHeader() {
     }
 
     var content = `
-    <section class="eventdetails">
+    <section class="eventdetails desktop">
     <div>
         <i class="fa-solid fa-clock" style="color: #ffffff;"></i>
         <p> ANU, BUILDING 105, CHILDERS STREET </p>
@@ -21,7 +21,7 @@ function insertHeader() {
         <p> OPEN 10AM TO 4PM FROM 25/11 TO 4/12 </p>
     </div>
 </section>
-<section class="mainnav">
+<section class="mainnav ">
 
     <svg id="Group_81" data-name="Group 81" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" width="686.284" height="146.697" viewBox="0 0 686.284 146.697">
@@ -70,8 +70,7 @@ function insertHeader() {
         </g>
     </svg>
 
-    <nav>
-
+    <nav class="desktop">
         <ul>
             <li> <a href="/"> Home </a> </li>
             <li> <a href="/about.html"> About </a> </li>
@@ -82,9 +81,17 @@ function insertHeader() {
                             class="fa-solid fa-arrow-right-long"></i> </button> </a> </li>
 
         </ul>
-
     </nav>
+
+    <i class="fa-solid fa-bars mobile" style="color: #ffffff;"></i>
+    
 </section>
+
+
+
+
+
+
     `;
     globalHeader.innerHTML = content;
 }
