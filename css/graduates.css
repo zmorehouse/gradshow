@@ -3,6 +3,10 @@
     justify-content:space-between;
 }
 
+.maincontent p {
+    font-size:18px !important;
+}
+
 .graduatepage h2 {
     font-size: 100px;
     color:#BD830E;
@@ -40,6 +44,22 @@
     background-color:black;
 }
 
+figure {
+    margin:0px;
+
+}
+
+.artwork > i {
+    position:relative;
+    top:-50px;
+    left:25px;
+}
+
+img {
+    width:100%;
+    border-radius:10px;
+margin-top:15px;
+}
 
 .artistmeta {
     border-radius:10px;
@@ -54,6 +74,7 @@
 }
 
 .artiststatement {
+    display:block !important;
     border-radius:10px;
     padding:35px;
     padding-top:50px;
@@ -73,4 +94,91 @@
 
 .artwork {
     margin-right:50px;
+}
+
+.artistmeta > div { 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.lightbox {
+    background: rgba(0, 0, 0, 0.874) ;
+    display:none;
+    align-content:center;
+    justify-content:center;
+	width: 100% !important;
+	height: 100%;		
+    position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+    flex-wrap:wrap;
+}
+
+.lightbox img {
+    width:100%;
+    height:100%;
+    opacity:1;
+    object-fit:contain;
+
+}
+
+.lightbox figure {
+    height:80vh;
+}
+
+.lightbox figcaption {
+    width:100%;
+    text-align:center;
+    color:white;
+    margin-top:50px;
+
+}
+.lightbox i {
+    position:relative;
+    left:90%;
+    top:3%;
+    width:100%;
+}
+
+
+@media only screen and (max-width: 768px)   {
+    .graduatepage h1 {
+        position:fixed;
+        top:40%;
+        left:45%;
+        font-size:90px;
+        transform:rotate(270deg);
+        width:100%;
+        z-index:999;
+        text-align:right;
+    }
+    
+    .maincontent {
+        flex-wrap:wrap;
+    }
+
+    .maincontent > div {
+        width:87.5% !important;    
+    }
+
+    .artwork {
+        padding-right:0px !important;
+        margin-right:0px !important;
+    }
+
+    .artistmeta {
+        filter:unset;
+        padding:0px;
+        margin:0px;
+    }
+
+    .artistmeta h2 {
+        font-size:60px;
+    }
+
+    p {
+        margin:0px;
+    }
 }

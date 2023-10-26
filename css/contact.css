@@ -1,6 +1,6 @@
 .maincontent {
     display:flex;
-    gap:2%;
+    gap:1%;
     align-items:center;
 }
 
@@ -11,7 +11,22 @@
 
 .contactinfo {
     width:25%;
+    border-radius:10px;
+    padding:35px;
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color:white;
+    filter: drop-shadow(5px 5px 5px #00000017);
+    margin:15px;
+    transition:0.4s;
+
 }
+
+.contactinfo :hover {
+   transform:translateY(-15px);
+   transition:0.4s;
+}
+
 
 .contactinfo a {
     display:flex;
@@ -121,6 +136,10 @@ label {
     font-size:16px !important;
 }
 
+hr {
+    color:#BD830E;
+}
+
 
 @media only screen and (max-width: 768px)   {
     .maincontent {
@@ -135,13 +154,10 @@ label {
     }
 
     .contactinfo {
-        border-radius:10px;
         padding:25px !important;
         padding-top:50px;
         padding-bottom:50px;
-        background-color:white;
-        filter: drop-shadow(5px 5px 5px #00000017);
-        transition:0.4s;
+
     }
 
     .exhibitioninfo {

@@ -77,8 +77,7 @@ function insertHeader() {
             <li> <a href="/acknowledgements.html"> Acknowledgements </a> </li>
             <li> <a href="/support.html"> Support </a> </li>
             <li> <a href="/contact.html"> Contact </a> </li>
-            <li> <a href="/graduates.html"> <button class="graduatesbutton"> Meet Our Graduates <i
-                            class="fa-solid fa-arrow-right-long"></i> </button> </a> </li>
+            <li> <a href="/graduates.html"> <button class="graduatesbutton"> Meet Our Graduates <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i> </button> </a> </li>
 
         </ul>
     </nav>

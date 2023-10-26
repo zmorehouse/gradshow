@@ -19,7 +19,7 @@
         rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="/scripts/custom.js"></script>
+    <script src="/scripts/lightbox.js"></script>
     <script src="/scripts/templates.js"></script>
     <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
 
@@ -33,22 +33,28 @@
     <!-- Page Title Section -->
     <section class="pagetitle graduatepage">
         <h1> Graduate Name </h1>
-        <h2> Painting Name </h2>
+        <h2 class="desktop"> Painting Name </h2>
     </section>
 
     <section class="maincontent">
-        <a href="/graduates.html"> Back </a>
+        <a href="/graduates.html"><i class="fa-solid fa-chevron-left fa-lg"></i> Back  </a>
         <div>
             <div class="artwork">
-                <figure> 
-                </figure>
-                <figcaption> </figcaption>
-                <div class="graduatebuttons">
+                <img src="images\adeline-jeffery.jpg" alt="Adeline Jeffery">
+                <i class="fa-solid fa-expand open" style="color: #ffffff;"></i>
+                <div class="graduatebuttons desktop">
                     <button> GRADUATE PORTFOLIO LINKS </button>
                     <button> SEE OUR OTHER GRADUATES </button>
                 </div>
             </div>
         </div>
+
+        <div class="lightbox">
+            <i class="fa-solid fa-x close" style="color: #ffffff;"></i>
+            <figure> <img src="images\adeline-jeffery.jpg" alt="Adeline Jeffery"> </figure>
+            <figcaption> <p>Painting Name by Artists Name | Detail, 2022, Acrylic on Canvas  </p> </figcaption>
+        </div>
+
         <div>
             <div class="artistmeta">
                 <h2> Painting Name</h2>
@@ -61,13 +67,14 @@
                     "The Local", Detail, 2022, Acrylic on Canvas
                 </p>
             </div>
-            <div class="artiststatement">
+            <div class="artiststatement desktop">
                 <h2> Artists <span style="color:#BD830E;"> Statement</span> </h2>
                 <hr>
                 <p>
-                    I am fascinated by the context of what “Australian culture” really is, and how it sits within a contemporary world. As a settler artist, with parents born overseas I have inherently observed Australia with an outsider perspective. These works draw on observational tools to depict aspects of an iconic yet controversial environment, an Australian local club. 
-The style of the works are intentionally vague, using a faux naive style that doesn’t hold any judgement or direct viewpoint. The figure are non verbal and removed of expression. In doing so the work asks the audience to become apart of the concept by giving their own personal views and understanding. These views then help to understand each other in such a vast culture. This understanding is dire in identifying where the Australian culture sits in a contemporary world and these works act as a conversation starter.
-                </p>
+                    I am fascinated by the context of what “Australian culture” really is, and how it sits within a contemporary world. As a settler artist, with parents born overseas I have inherently observed Australia with an outsider perspective. These works draw on observational tools to depict aspects of an iconic yet controversial environment, an Australian local club. </p>
+<p> The style of the works are intentionally vague, using a faux naive style that doesn’t hold any judgement or direct viewpoint. The figure are non verbal and removed of expression. In doing so the work asks the audience to become apart of the concept by giving their own personal views and understanding. These views then help to understand each other in such a vast culture. This understanding is dire in identifying where the Australian culture sits in a contemporary world and these works act as a conversation starter.
+</p>
+
             </div>
     
         </div>
