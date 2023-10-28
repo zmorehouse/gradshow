@@ -146,12 +146,12 @@ margin-top:15px;
 @media only screen and (max-width: 768px)   {
     .graduatepage h1 {
         position:fixed;
-        top:40%;
-        left:45%;
+        top:44%;
+        left:35%;
         font-size:90px;
         transform:rotate(270deg);
-        width:100%;
-        z-index:999;
+        width:500px;
+        z-index:5 !important;
         text-align:right;
     }
     
@@ -181,4 +181,29 @@ margin-top:15px;
     p {
         margin:0px;
     }
+
+    .artiststatement {
+        background-color:#313131;
+        z-index:6 !important;
+        position:relative;
+        display:flex;
+        flex-wrap:wrap;
+        color:white;
+        padding:7%;
+    }
+
+    .artiststatement p {
+        width:100%;
+        padding-top:15px;
+    }
+
+    .artiststatement hr {
+        width:100%;
+    }
+    .artiststatement h2 {
+        font-size:50px;
+
+    }
+
+
 }
