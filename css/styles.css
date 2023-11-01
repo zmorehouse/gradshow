@@ -131,8 +131,17 @@ width:25%;
 }
 
 footer a {
-    color:white !important;
+    color:white ;
+    transition:0.25s;
+
 }
+
+footer a:hover {
+    color:#BD830E;
+    transition:0.25s;
+}
+
+
 
 footer svg {
     width:75%;
@@ -416,7 +425,7 @@ a {
 }
 
 .mobile {
-    display:none;
+    display:none !important;
 }
 
 .maincontent {

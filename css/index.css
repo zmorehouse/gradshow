@@ -78,8 +78,22 @@ main > * {
     background-color:#2C2C2C;
     display:flex;
     flex-direction:row;
-    padding:7% 7% 7% 7%;
+    padding:3% 7% 3% 7%;
 
+}
+
+.logo {
+    width:100%;
+    height:100px;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+    transition: 0.25s;
+
+}
+
+.logo:hover {
+    transform:scale(1.1);
+    transition: 0.25s;
 }
 
 /* Support Our Graduates */
@@ -88,8 +102,8 @@ main > * {
     flex-direction:column;
     align-items:center;
     padding:7% 7% 7% 7%;
-
     text-align:center;
+
 }
 
 .support p {
@@ -101,4 +115,23 @@ main > * {
     flex-direction:row;
     width:100%;
     justify-content: space-evenly;
+    gap:20px;
+    margin-top:25px;
+}
+
+.supportboxes div {
+    width:33%;
+    flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+}
+
+.supportboxes button {
+    margin-top:-20px;
+}
+
+.supportboxes img {
+    width:100%;
+    height:300px;
+    object-fit:cover;
 }
