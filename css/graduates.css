@@ -32,15 +32,15 @@
     gap:15px;
 }
 
-.graduatebuttons button {
+.graduatebuttons a {
     width:50%;
 }
 
-.graduatebuttons > button:nth-of-type(2)  {
+.graduatebuttons > a:nth-of-type(2)  {
     background-color:#BD830E;
 }
 
-.graduatebuttons > button:nth-of-type(2):hover  {
+.graduatebuttons > a:nth-of-type(2):hover  {
     background-color:black;
 }
 

@@ -15,6 +15,17 @@ header {
 	margin-bottom: -40% !important;
 }
 
+header a, footer a {
+    background-color:transparent;
+    padding:0px;
+    border-style:none;
+}
+
+header a:hover, footer a:hover {
+    color:#BD830E;
+    background-color:transparent;
+}
+
 
 .mainnav, .eventdetails {
     padding-left:7%;
@@ -67,9 +78,18 @@ header {
     padding-left:15px;
     padding-right:15px;
     font-size:26px;
-    margin-left:10px;
+    border-style:solid;
+    border-width:1px;
+    border-color:white;
+    text-transform:uppercase;
+    transition:0.4s;
+    text-decoration:none;
 }
 
+.graduatesbutton:hover {
+    color:white !important;
+    background-color:#BD830E;
+}
 
 .eventdetails div {
     display:flex;
@@ -130,9 +150,6 @@ footer > div {
 width:25%;
 }
 
-footer a {
-    color:white !important;
-}
 
 footer svg {
     width:75%;
@@ -196,7 +213,7 @@ footer svg {
 
 }
 
-.calltoaction button {
+.calltoaction a {
     margin-top:15px;
     width:100%;   
     
@@ -308,7 +325,7 @@ body {
 }
 
 
-button {
+a {
     border-radius:0;
     border-style:solid;
     border-width:1px;
@@ -321,27 +338,26 @@ button {
     color:white;
     margin-top:10px;
     margin-bottom:10px;
-    display: flex;
     justify-content: space-between;
     transition:0.4s;
-
+    text-decoration:none;
 }
 
 
 
-button i{
+a i{
     padding-left:15px;
     transition:0.4s;
 
 }
 
-button:hover {
+a:hover {
     background-color:#BD830E;
     transform:scale(1.1);
     transition:0.4s;
 }
 
-button:hover i {
+a:hover i {
     transform:rotate(-90deg) translatex(-5px) translatey(4px) scale(1.025);
     transition:0.4s;
 
@@ -362,19 +378,12 @@ h1, h2, h3, h4 {
     font-weight:100;
 }
 
-p, a {
+p {
     font-family:'Open Sans';
     font-size:16px;
     font-weight:100;
 }
 
-a {
-    font-weight:600;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:black;
-    transform:scale(1);
-}
 
 #highlighttext {
     color:#BD830E;
