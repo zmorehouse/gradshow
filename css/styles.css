@@ -150,6 +150,18 @@ footer > div {
 width:25%;
 }
 
+footer a {
+    color:white ;
+    transition:0.25s;
+
+}
+
+footer a:hover {
+    color:#BD830E;
+    transition:0.25s;
+}
+
+
 
 footer svg {
     width:75%;
@@ -425,7 +437,7 @@ p {
 }
 
 .mobile {
-    display:none;
+    display:none !important;
 }
 
 .maincontent {
