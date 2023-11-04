@@ -1,10 +1,8 @@
 
 // Left To Do On Desktop
 Hero Slider
-New Logos
 Updated Graduate List
 Updated Graduates Button
-About Page Formatting
 
 Intro Animation 
 
@@ -12,6 +10,7 @@ Intro Animation
 Hamburger Menu
 Check all pages and apply styling.
     Will be broken : Homepage, Graduates Page, Grad Gallery Page. general touchups for rest + lappy styling
+    
 
 // If Time
 Additional Page Animations
@@ -19,6 +18,9 @@ Sticky Header on Desktop
 
 
 // Before submitting
+Sitemap
 Comments espc js
 Check slashes
 Validate All
+Fix Blank Div Homepage
+Fix Dropdown FIlter

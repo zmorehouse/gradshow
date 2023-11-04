@@ -35,6 +35,10 @@ width:100%;
 align-items:center;
 }
 
+.contactinfo a:hover {
+    transform:unset;
+}
+
 .contactinfo i {
  margin-right:15px;
 }
@@ -137,6 +141,7 @@ transition:0.4s;
 .exhibitioninfo h2 {
     font-size:50px;
 }
+
 
 .exhibitioninfo div {
     display:flex;
