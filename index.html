@@ -16,8 +16,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="/scripts/templates.js"></script>
     <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
+    <script src="/scripts/templates.js"></script>
+    <script src="/scripts/carousel.js"></script>
+
 
 </head>
 <body>
@@ -55,12 +57,112 @@
     </section>
 
     <section class="graduateslist">
-        <h2> Meet your <span id="highlighttext">2023 Exhibitors </span></h2>
+        <h2> Meet your <span id="highlighttext">2023 </span>Exhibitors </h2>
         <div>
-            <!-- Graduate Photos -->
-            <p> This is where the graduate slider will go</p>
-        </div>
-        <a href=""> 
+            <p class="prev-btn"> Prev </p>
+
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/adeline-jeffery.jpg" alt="Adeline Jeffery's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Adeline Jeffery</h3>
+                        <p>Bachelor of Visual Arts / Bachelor of Art History and Curatorship</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/alicia-cox.jpg" alt="Alicia Cox's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Alicia Cox</h3>
+                        <p>Bachelor of Visual Arts</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/bonnie-burns.jpg" alt="Bonnie Burns' Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Bonnie Burns</h3>
+                        <p>Bachelor of Visual Arts / Bachelor of Art History and Curatorship</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/carl-dino.jpg" alt="Carl Dino's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Carl Dino</h3>
+                        <p>Bachelor of Visual Arts</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/jackson-taylor.jpg" alt="Jackson Taylor's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Jackson Taylor</h3>
+                        <p>Bachelor of Visual Arts</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/juliette-baxter.jpg" alt="Juliette Baxter's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Juliette Baxter</h3>
+                        <p>Bachelor of Visual Arts</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Laura Fenderson</h3>
+                        <p>Bachelor of Visual Arts</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/mary-anne-sadleir.jpg" alt="Mary Anne Sadleir's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Mary-Anne Sadleir</h3>
+                        <p>Bachelor of Visual Arts</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/niamh-armstrong.jpg" alt="Niamh Armstrong's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Niamh Armstrong</h3>
+                        <p>Bachelor of Visual Arts / Bachelor of Art History and Curatorship</p>
+                    </figcaption>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/graduateworks/savannah-wheeler.jpg" alt="Savannah Wheeler's Graduate Artwork">
+                    </figure>
+                    <figcaption>
+                        <h3>Savannah Wheeler</h3>
+                        <p>Bachelor of Visual Arts / Bachelor of Environment and Sustainability</p>
+                    </figcaption>
+                </div>
+
+
+            </div>
+
+        </section>
+        <p class="next-btn"> Next </p>
+        <span class="pagination"></span>
+
+
+        <a href="/graduates.html"> 
             See Our Full List of Graduates
             <i class="fa-solid fa-arrow-right-long"></i>
         </a>
@@ -101,22 +203,22 @@
         <p> There are a number of ways you can support our 2023 graduates. Outside attending the exhibiton, there are a handful of ways to help out, including buying artworks and donating to our various artists support schemes. </p>
             <div class="supportboxes">
                 <div>
-                    <img src="images/graduateworks/carl-dino.jpg" alt="Carl Dino's Artwork (Decorative)">
-                    <button>
+                    <img src="images/graduateworks/carl-dino.jpg" alt="Carl Dino's Artwork">
+                    <a>
                         Purchase an Artwork
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                 </div>
                 <div>
-                    <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson's Artwork (Decorative)">
-                    <button>
+                    <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson's Artwork">
+                    <a>
                         Opportunities Fund
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                 </div>
                 <div>
-                    <img src="images/graduateworks/bridget-baskerville.jpg" alt="Bridget Baskerville's Artwork (Decorative)">
-                    <button>
+                    <img src="images/graduateworks/savannah-wheeler.jpg" alt="Savannah Wheeler's Artwork ">
+                    <a>
                        Emerging Artists Support Scheme
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>

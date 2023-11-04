@@ -108,7 +108,7 @@ header a:hover, footer a:hover {
 }
 
 .mainnav svg {
-    width:18%;
+    width:50%;
     height:100px;
     margin-left:5px;
 }
@@ -161,10 +161,8 @@ footer a:hover {
     transition:0.25s;
 }
 
-
-
 footer svg {
-    width:75%;
+    width:100%;
     height:50px;
 }
 
@@ -252,6 +250,18 @@ footer svg {
 width:100%;
 }
 
+.menulogo {
+    all:unset;
+    filter:unset;
+    cursor:pointer;
+}
+
+.menulogo:hover {
+    all:unset;
+    cursor:pointer;
+
+}
+
 
 
 @media only screen and (max-width: 1024px )   {
@@ -335,6 +345,16 @@ body {
     margin:0px;
     
 }
+
+
+figure {
+    all:unset;
+}
+
+figcaption {
+    all:unset;
+}
+
 
 
 a {

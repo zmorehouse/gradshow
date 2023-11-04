@@ -84,6 +84,22 @@ textarea {
     background-color:#F2F2F2;
 }
 
+a {
+    all: unset;
+    transition:0.25s;
+}
+
+a:hover {
+background-color:transparent;
+    color:#BD830E;
+    cursor:pointer;
+}
+
+a:hover i {
+    transform:unset;
+}
+
+
 #submitbutton {
 width:100%;
 border-radius:0;
@@ -102,6 +118,10 @@ display: flex;
 justify-content: space-between;
 transition:0.4s;
 
+}
+
+#submitbutton:hover {
+    background-color: #313131;
 }
 
 .exhibitioninfo {

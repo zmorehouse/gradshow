@@ -22,7 +22,7 @@ function insertHeader() {
     </div>
 </section>
 <section class="mainnav ">
-
+    <a href="/" class="menulogo">
     <svg id="Group_81" data-name="Group 81" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" width="686.284" height="146.697" viewBox="0 0 686.284 146.697">
         <defs>
@@ -69,6 +69,7 @@ function insertHeader() {
                 transform="translate(-261.753 -28.784)" fill="#fff" />
         </g>
     </svg>
+    </a>
 
     <nav class="desktop">
         <ul>
@@ -104,6 +105,7 @@ function insertFooter() {
 
     var content = ` 
     <div>
+    <a href="/" class="menulogo">
     <svg id="Group_81" data-name="Group 81" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" width="686.284" height="146.697" viewBox="0 0 686.284 146.697">
         <defs>
@@ -150,6 +152,7 @@ function insertFooter() {
                 transform="translate(-261.753 -28.784)" fill="#fff" />
         </g>
     </svg>
+    </a>
     <p> The Australian National University acknowledges, celebrates and pays our respects to the Ngunnawal and Ngambri
         people of the Canberra region and to all First Nations Australians on whose traditional lands we meet and work,
         and whose cultures are among the oldest continuing cultures in human history.
