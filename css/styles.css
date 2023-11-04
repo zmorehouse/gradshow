@@ -34,14 +34,16 @@ header a:hover, footer a:hover {
     display:flex;
 }
 
+
+
 .eventdetails {
     background-color:#BD830E;
     flex-direction: row-reverse;
 }
 
 .mainnav {
-    padding-top:15px;
-    padding-bottom:15px;
+    padding-top:30px;
+    padding-bottom:30px;
     justify-content:space-between;
     align-items:center;
     z-index:999;
@@ -73,10 +75,7 @@ header a:hover, footer a:hover {
 }
 
 .graduatesbutton {
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:15px;
-    padding-right:15px;
+    padding:10px 20px 10px 20px;
     font-size:26px;
     border-style:solid;
     border-width:1px;
@@ -84,6 +83,7 @@ header a:hover, footer a:hover {
     text-transform:uppercase;
     transition:0.4s;
     text-decoration:none;
+    display:flex;
 }
 
 .graduatesbutton:hover {
@@ -107,11 +107,16 @@ header a:hover, footer a:hover {
     font-weight:500;
 }
 
-.mainnav svg {
-    width:50%;
-    height:100px;
-    margin-left:5px;
+
+
+.menulogo {
+    width:17.5% !important;
 }
+
+.menulogo img {
+    width:100%;
+}
+
 
 
 
@@ -129,6 +134,34 @@ footer {
 
 footer > * {
     color:white;    
+}
+
+.footerlogos {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    gap:15px;
+    align-items:center;
+}
+
+.footerlogos a {
+width:60%;
+}
+
+.footerlogos a:hover {
+    transform:unset;
+}
+
+
+#anulogo {
+    width:20%;
+    height:75px;
+    object-fit:contain;
+    margin-left:-5px;
+}
+
+#gradshowlogo {
+width:100%;
 }
 
 .navmenupopup {
@@ -374,6 +407,7 @@ a {
     margin-bottom:10px;
     justify-content: space-between;
     transition:0.4s;
+    transform:scale(1);
     text-decoration:none;
 }
 
