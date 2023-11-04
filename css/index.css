@@ -109,19 +109,23 @@ main > * {
   text-align: center;
 }
 
+.carousel {
+    margin-top:25px;
+}
+
 .carousel-container {
   display: flex;
   transition: transform 0.5s ease;
   overflow: hidden;
+    margin-bottom:0px;
+  
 }
 
 /* Style the carousel items */
 .carousel-item {
   flex: 0 0 auto;
-  width: 300px; /* Adjust the width as needed */
-  padding: 10px;
+  width: calc(100vw / 6);  padding: 10px;
   text-align: center;
-  margin: 10px;
   background-color: #fff;
 }
 
@@ -142,29 +146,38 @@ main > * {
   border-radius: 5px;
 }
 
+.carouselcontrols {
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:35px;
+}
+
 /* Style the previous and next buttons */
 .prev-btn,
 .next-btn {
   cursor: pointer;
   padding: 10px;
-  background-color: #0077ff;
-  color: #fff;
-  border: none;
-  margin: 5px;
-  border-radius: 5px;
+    transform:scale(0.75);
+    transition:0.25s;
+
 }
 
-/* Style the pagination text (if needed) */
-.pagination {
-  text-align: center;
-  padding-bottom: 50px;
+.prev-btn:hover,
+.next-btn:hover {
+    transform:scale(1.25);
+    transition:0.25s;
+
 }
+
+
 /* Style the page indicators (dots) */
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .page-indicator {
@@ -181,21 +194,6 @@ main > * {
   background-color: #bd830e;
 }
 
-/* Position the "Prev" button within the .graduateslist section */
-.graduateslist .prev-btn {
-  position: absolute;
-  left: 10px; /* Adjust the left distance as needed */
-  transform: translateY(-50%);
-  z-index: 2; /* Make sure it's above the carousel */
-}
-
-/* Position the "Next" button within the .graduateslist section */
-.graduateslist .next-btn {
-  position: absolute;
-  right: 10px; /* Adjust the right distance as needed */
-  transform: translateY(-50%);
-  z-index: 2; /* Make sure it's above the carousel */
-}
 
 /* About */
 .about {

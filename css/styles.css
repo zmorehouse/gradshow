@@ -34,7 +34,9 @@ header a:hover, footer a:hover {
     display:flex;
 }
 
-
+.cloned {
+    visibility:hidden;
+}
 
 .eventdetails {
     background-color:#BD830E;
@@ -189,9 +191,23 @@ footer a {
 
 }
 
+footer a i {
+    padding-left:0px;
+    padding-right:5px;
+    transform:scale(0.70)
+
+}
+
 footer a:hover {
     color:#BD830E;
     transition:0.25s;
+    transform:unset;
+}
+
+footer a:hover i {
+    color:#BD830E ;
+    transform:unset;
+    transform:scale(0.70);
 }
 
 footer svg {

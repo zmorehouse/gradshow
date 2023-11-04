@@ -6,40 +6,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const pagination = document.querySelector('.pagination');
     const pageIndicators = [];
 
-    let currentIndex = 0; // Start with the first item
+    const cloneCount = 7; // Number of clones at each end
+    let currentIndex = cloneCount; // Start with the first non-clone item
     let totalPages = carouselItems.length;
-    let isDragging = false;
-    let startPosition = 0;
-    let translateX = 0;
+    const itemWidth = carouselItems[0].offsetWidth;
+    let translateX = itemWidth;
 
-    // Function to set the transform property
+    // Function to set the transform property with a transition
     function setTransform() {
         const itemWidth = carouselItems[0].offsetWidth;
-        carouselContainer.style.transform = `translateX(-${currentIndex * itemWidth + translateX}px)`;
+        carouselContainer.style.transition = 'transform 0.5s';
+        carouselContainer.style.transform = `translateX(-${(currentIndex - cloneCount) * itemWidth + translateX - (itemWidth / 2)}px)`;
 
         // Update the active page indicator
         pageIndicators.forEach((indicator, index) => {
             indicator.classList.remove('active');
-            if (index === currentIndex) {
+            if (index === currentIndex - cloneCount) {
                 indicator.classList.add('active');
             }
         });
     }
 
-    // Move to the next item
+    // Move to the next item with a smooth transition
     function next() {
         currentIndex++;
-        if (currentIndex >= totalPages) {
-            currentIndex = 0;
+        if (currentIndex >= totalPages + cloneCount) {
+            currentIndex = cloneCount;
         }
         setTransform();
     }
 
-    // Move to the previous item
+    // Move to the previous item with a smooth transition
     function prev() {
         currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = totalPages - 1;
+        if (currentIndex < cloneCount) {
+            currentIndex = totalPages + cloneCount - 1;
         }
         setTransform();
     }
@@ -49,56 +50,26 @@ document.addEventListener('DOMContentLoaded', function () {
         const indicator = document.createElement('span');
         indicator.classList.add('page-indicator');
         indicator.addEventListener('click', () => {
-            currentIndex = i;
+            currentIndex = i + cloneCount;
             setTransform();
         });
         pageIndicators.push(indicator);
         pagination.appendChild(indicator);
     }
 
-    // Initially, set the transform to show the first item and activate the first page indicator
+    // Initially, set the transform to show the first non-clone item and activate the first page indicator
     setTransform();
     pageIndicators[0].classList.add('active');
+
+    // Clone the first and last items multiple times and insert them before and after the original items
+    for (let i = 0; i < cloneCount; i++) {
+        const firstClone = carouselItems[i].cloneNode(true);
+        const lastClone = carouselItems[totalPages - 1 - i].cloneNode(true);
+        carouselContainer.appendChild(firstClone);
+        carouselContainer.insertBefore(lastClone, carouselContainer.firstChild);
+    }
 
     // Event listeners for the next and prev buttons
     nextBtn.addEventListener('click', next);
     prevBtn.addEventListener('click', prev);
-
-    // Add event listeners for drag functionality
-    carouselContainer.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        startPosition = e.clientX;
-    });
-
-    carouselContainer.addEventListener('mousemove', (e) => {
-        if (isDragging) {
-            const currentPosition = e.clientX;
-            translateX = currentPosition - startPosition;
-            setTransform();
-        }
-    });
-
-    carouselContainer.addEventListener('mouseup', () => {
-        if (isDragging) {
-            isDragging = false;
-            const itemWidth = carouselItems[0].offsetWidth;
-            if (Math.abs(translateX) > itemWidth / 2) {
-                if (translateX > 0) {
-                    prev();
-                } else {
-                    next();
-                }
-            }
-            translateX = 0;
-            setTransform();
-        }
-    });
-
-    carouselContainer.addEventListener('mouseleave', () => {
-        if (isDragging) {
-            isDragging = false;
-            translateX = 0;
-            setTransform();
-        }
-    });
 });

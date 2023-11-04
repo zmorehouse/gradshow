@@ -26,15 +26,36 @@
     flex-wrap:wrap;
 }
 
-.graduatebuttons {
+.graduatelinks {
     display:flex;
     flex-wrap:nowrap;
-    gap:15px;
+    gap: 15px;
 }
 
-.graduatebuttons a {
-    width:50%;
+.graduatelinks a {
+    all:unset;
+    font-family:'Open Sans';
+    cursor:pointer;
 }
+
+.graduatelinks i {
+    transition:0s;
+    padding-left:0px;
+
+}
+
+.graduatelinks a:hover{
+    color:#BD830E
+}
+
+.graduatelinks a:hover i{
+    transform:unset;
+    color:#BD830E !important;
+    transition:0s;
+}
+
+
+
 
 #back {
     background-color:transparent;
@@ -71,6 +92,13 @@ figure {
     position:relative;
     top:-50px;
     left:25px;
+    transition:0.25s;
+}
+
+.artwork > i:hover {
+    transform:scale(1.1);
+    transition:0.25s;
+
 }
 
 img {

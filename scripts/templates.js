@@ -99,16 +99,16 @@ function insertFooter() {
     <div>
         <h4> Exhibition </h4>
         <ul>
-            <li> <i class="fa-solid fa-phone"></i> <a href="tel:+61 2 6125 5841"> +61 2 6125 5841 </a> </li>
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:soad.gallery@anu.edu.au">
+            <li> <a href="tel:+61 2 6125 5841"> <i class="fa-solid fa-phone"></i>  +61 2 6125 5841 </a> </li>
+            <li><a href="mailto:soad.gallery@anu.edu.au"><i class="fa-solid fa-envelope"></i> 
                     soad.gallery@anu.edu.au</a> </li>
         </ul>
     </div>
     <div>
         <h4> Future Students </h4>
         <ul>
-            <li><i class="fa-solid fa-phone"></i> <a href="tel:+61 2 6125 5810"> +61 2 6125 5810</a> </li>
-            <li> <i class="fa-solid fa-envelope"></i><a href="mailto:admin.somad@anu.edu.au"> admin.somad@anu.edu.au</a>
+            <li> <a href="tel:+61 2 6125 5810"><i class="fa-solid fa-phone"></i> +61 2 6125 5810</a> </li>
+            <li> <a href="mailto:admin.somad@anu.edu.au"> <i class="fa-solid fa-envelope"></i>admin.somad@anu.edu.au</a>
             </li>
         </ul>
     </div>
