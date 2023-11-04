@@ -225,7 +225,9 @@ footer svg {
 
 .calltoaction a {
     margin-top:15px;
-    width:100%;   
+    width:300px;
+    display:flex;
+    justify-content:space-between;
     
 }
 
