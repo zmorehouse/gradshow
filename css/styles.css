@@ -1,5 +1,7 @@
-/* Template Styles */
-/* Header & Footer Styling */
+/* Styles.css contains styles that are applied globally to maintain consistency throughout the website.
+These include both the generic styling of fonts, colours, etc. alongside the styling of reused templates (Header, Footer and CTA) */
+
+/* Styling for reusable templates */
 header,
 footer {
   display: flex;

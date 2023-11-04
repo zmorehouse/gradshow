@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { // Run after the DOM content is loaded.
     const openIcon = document.querySelector('.open');
 const closeIcon = document.querySelector('.close');
 const lightbox = document.querySelector('.lightbox');
