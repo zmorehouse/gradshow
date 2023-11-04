@@ -8,11 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentIndex = 0; // Start with the first item
     let totalPages = carouselItems.length;
+    let isDragging = false;
+    let startPosition = 0;
+    let translateX = 0;
 
     // Function to set the transform property
     function setTransform() {
         const itemWidth = carouselItems[0].offsetWidth;
-        carouselContainer.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        carouselContainer.style.transform = `translateX(-${currentIndex * itemWidth + translateX}px)`;
 
         // Update the active page indicator
         pageIndicators.forEach((indicator, index) => {
@@ -60,4 +63,42 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listeners for the next and prev buttons
     nextBtn.addEventListener('click', next);
     prevBtn.addEventListener('click', prev);
+
+    // Add event listeners for drag functionality
+    carouselContainer.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startPosition = e.clientX;
+    });
+
+    carouselContainer.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            const currentPosition = e.clientX;
+            translateX = currentPosition - startPosition;
+            setTransform();
+        }
+    });
+
+    carouselContainer.addEventListener('mouseup', () => {
+        if (isDragging) {
+            isDragging = false;
+            const itemWidth = carouselItems[0].offsetWidth;
+            if (Math.abs(translateX) > itemWidth / 2) {
+                if (translateX > 0) {
+                    prev();
+                } else {
+                    next();
+                }
+            }
+            translateX = 0;
+            setTransform();
+        }
+    });
+
+    carouselContainer.addEventListener('mouseleave', () => {
+        if (isDragging) {
+            isDragging = false;
+            translateX = 0;
+            setTransform();
+        }
+    });
 });

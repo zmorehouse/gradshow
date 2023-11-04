@@ -8,10 +8,30 @@ main {
     padding-right:7%;
     justify-content:center;
     background-color:black;
+    overflow:hidden;
 }
 
 main > * {
     color:white;
+}
+
+
+.hero-slider {
+display: flex;
+transition: transform 0.5s; /* Add a transition for smooth sliding */
+}
+
+.landing-slide {
+flex: 0 0 100%;
+text-align: center;
+position: relative;
+}
+
+.slide-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 /* Important Info */
@@ -45,9 +65,10 @@ main > * {
     flex-direction:column;
     align-items:center;
     padding:7% 7% 7% 7%;
-
+    overflow:hidden;
     text-align:center;
 }
+
 
 .carousel-container {
     display: flex;

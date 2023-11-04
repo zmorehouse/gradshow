@@ -1,5 +1,5 @@
-window.addEventListener('DOMContentLoaded', () => {
-const openIcon = document.querySelector('.open');
+document.addEventListener('DOMContentLoaded', function () {
+    const openIcon = document.querySelector('.open');
 const closeIcon = document.querySelector('.close');
 const lightbox = document.querySelector('.lightbox');
 
