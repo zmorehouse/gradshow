@@ -73,7 +73,13 @@
     object-fit:cover;
 }
 
-/* Responsive */
+/* Responsive Views */
+/* Large Laptop Sizing */
+@media only screen and (max-width: 1368px) {
+    
+}
+
+/* Small Laptop Sizing */
 @media only screen and (max-width: 1024px )   {
     .staggered {
         flex-wrap: wrap;
@@ -84,7 +90,7 @@
 
 }
 
-
+/* Tablet Sizing */
 @media only screen and (max-width: 768px)   {
     .headofschool h2 {
         font-size:20px !important;
@@ -106,4 +112,9 @@
     .headofschool > div:nth-of-type(2) {
         flex-direction:column-reverse;
     }
+}
+
+/* Phone Sizing */
+@media only screen and (max-width: 480px) {
+
 }

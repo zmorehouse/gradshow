@@ -60,7 +60,18 @@
     padding-left:15px;
 }
 
+/* Responsive Views */
+/* Large Laptop Sizing */
+@media only screen and (max-width: 1368px) {
+    
+}
 
+/* Small Laptop Sizing */
+@media only screen and (max-width: 1024px )   {
+
+}
+
+/* Tablet Sizing */
 @media only screen and (max-width: 768px)   {
     .maincontent h2 {
         font-size:20px !important;
@@ -82,4 +93,9 @@
     .pastevents {
         padding-top:50px !important;
     }
+}
+
+/* Phone Sizing */
+@media only screen and (max-width: 480px) {
+
 }
