@@ -93,11 +93,27 @@ figure {
     top:-50px;
     left:25px;
     transition:0.25s;
+    color:white;
 }
 
 .artwork > i:hover {
-    transform:scale(1.1);
+    transform:scale(1.25);
     transition:0.25s;
+    color:#BD830E;
+
+
+}
+
+.fa-x.close {
+    color:white;
+    transition:0.25s;
+
+}
+
+.fa-x.close:hover {
+    color:#BD830E;
+    transition:0.25s;
+        transition:0.25s;
 
 }
 
@@ -171,6 +187,7 @@ margin-top:15px;
 }
 
 .lightbox figure {
+    display:flex;
     height:80vh;
 }
 
@@ -178,7 +195,7 @@ margin-top:15px;
     width:100%;
     text-align:center;
     color:white;
-    margin-top:50px;
+    margin-top:75px;
 
 }
 .lightbox i {

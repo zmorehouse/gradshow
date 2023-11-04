@@ -26,6 +26,24 @@ main > * {
   position: relative;
 }
 
+.landing-slide:nth-child(1) {
+    background-image: url('/images/graduateworks/adeline-jeffery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .landing-slide:nth-child(2) {
+    background-color: #EAEAEA; /* Change to your desired background color */
+  }
+  
+  .landing-slide:nth-child(3) {
+    background-image: url('/images/graduateworks/adeline-jeffery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 .slide-content {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -82,6 +100,7 @@ main > * {
   flex-direction: row;
   padding-left: 7%;
   padding-right: 7%;
+  padding-top:1%;
 }
 
 .importantinfo > div {
@@ -119,6 +138,15 @@ main > * {
   overflow: hidden;
     margin-bottom:0px;
   
+}
+
+
+figure {
+    all:unset;
+}
+
+figcaption {
+    all:unset;
 }
 
 /* Style the carousel items */
@@ -279,7 +307,9 @@ main > * {
 
 .supportboxes a {
   margin-top: -20px;
-  width: 80%;
+  width: 70%;
+  display:flex;
+  justify-content:space-between;
 }
 
 .supportboxes img {

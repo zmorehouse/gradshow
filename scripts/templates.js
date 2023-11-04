@@ -138,11 +138,11 @@ function insertCallToAction() {
 </div>
 
 <div>
-    <a href="">
+    <a href="graduates.html">
         See Our List of Graduates
         <i class="fa-solid fa-arrow-right-long"></i>
     </a>
-    <a href="">
+    <a href="contact.html">
         Exhibition Information
         <i class="fa-solid fa-arrow-right-long"></i>
     </a>

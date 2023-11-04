@@ -91,6 +91,7 @@ header a:hover, footer a:hover {
 .graduatesbutton:hover {
     color:white !important;
     background-color:#BD830E;
+    transform:scale(1);
 }
 
 .eventdetails div {
@@ -267,7 +268,7 @@ footer svg {
         width: 30%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: end;
         margin-left: 50px;
 
 }
@@ -398,13 +399,6 @@ body {
 }
 
 
-figure {
-    all:unset;
-}
-
-figcaption {
-    all:unset;
-}
 
 
 

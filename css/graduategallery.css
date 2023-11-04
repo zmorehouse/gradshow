@@ -3,8 +3,17 @@
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap:50px;
-  justify-content: space-evenly;justify-content: space-evenly;
+  justify-content: space-evenly;justify-content: start;
   padding-top:15px;
+}
+
+
+figure {
+    all:unset;
+}
+
+figcaption {
+    all:unset;
 }
 
 
@@ -55,10 +64,11 @@ object-fit:cover;
     justify-content:space-between;
     flex-wrap:nowrap;
     align-items:center;
+    margin-right:10px;
   }
 
   input {
-    width:25%;
+    width:22%;
     padding:10px;
     font-family:'Open Sans';
     font-size:14px;
@@ -72,4 +82,7 @@ object-fit:cover;
     padding:10px;
     padding-left:15px;
     padding-right:15px;
+    font-family:'Open Sans';
+    text-transform: uppercase;
   }
+  

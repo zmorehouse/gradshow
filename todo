@@ -1,29 +1,24 @@
-General
-    Change Buttons to A Tags DONE
-    Email pia about header section DONE
-    Comments
-    Add ANU logo to footer DONE
+
+// Left To Do On Desktop
+Hero Slider
+New Logos
+Updated Graduate List
+Updated Graduates Button
+About Page Formatting
+
+Intro Animation 
+
+// Mob and Resp Tommorow
+Hamburger Menu
+Check all pages and apply styling.
+    Will be broken : Homepage, Graduates Page, Grad Gallery Page. general touchups for rest + lappy styling
+
+// If Time
+Additional Page Animations
+Sticky Header on Desktop
 
 
-JS
-    Intro Animation
-    Hamburger Menu
-    Filtering Dropdown DONE
-    Lightbox DONE
-    Homepg Slider DONE
-    Defer Map on Contact Page 
-    Sticky Header On Scroll Breaks Layout
-    Logo Carousel DONE 
-    Homepage Carousel Kinda Fixed
-
-Animate 
-    Headlines and homepage
-
-Pages
-    Home - Almost looking good
-    Graduates This is looking good just fix buttoms 
-    GraduateTemplate + Clone Out - Dont want to clone too much incase responsive but will do a handful.
-    Intro Animation Pages
-
-Responsive
-    Tablet/Laptop Overview
+// Before submitting
+Comments espc js
+Check slashes
+Validate All
