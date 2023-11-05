@@ -255,6 +255,10 @@ figcaption {
 }
 
 /* About Section Styling */
+
+.highlighttext {
+  color: #bd830e;
+}
 .about {
   background-color: black;
   display: flex;

@@ -5,6 +5,10 @@
     align-items:center;
 }
 
+.maincontent h2 {
+    font-size:40px;
+}
+
 .maincontent div:nth-of-type(1) {
     width:60%;
 }
