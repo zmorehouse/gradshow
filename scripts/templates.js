@@ -24,9 +24,8 @@ function insertHeader() {
 <section class="mainnav">
     <a href="index.html" class="menulogo">
     <img src="images/logos/gradshowlogo.png" alt="Gradshow 2023 Logo">
-
     </a>
-
+    <div class="desktopnav">
     <nav>
         <ul>
             <li> <a href="index.html"> Home </a> </li>
@@ -38,9 +37,44 @@ function insertHeader() {
 
         </ul>
     </nav>
+    </div>
 
-    <i class="fa-solid fa-bars mobile" style="color: #ffffff;"></i>
-    
+
+    <div class="mobilenav">
+    <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
+    <label class="hamburger" for="hamburger-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+    <div class="pulloutmenu">
+    <img src="images/logos/anu-icon.png" alt="ANU Logo" class="logo">
+    <nav>
+      <ul>
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="about.html"> About </a> </li>
+        <li> <a href="acknowledgements.html"> Acknowledgements </a> </li>
+        <li> <a href="support.html"> Support </a> </li>
+        <li> <a href="contact.html"> Contact </a> </li>
+        <li> <a href="graduates.html"> Meet Our Graduates</a> </li>
+     </ul>
+     </nav>
+     <hr>
+     <div class="pullouteventdetails">
+
+
+            <p> 
+            25 NOVEMBER 2023 - 4 DECEMBER 2023</p>
+            <p> OPEN DAILY 10AM - 4PM  </p>
+
+
+            <p> AUSTRALIAN NATIONAL UNIVERSITY <br />BUILDING 105, CHILDERS STREET, ACTON </p>
+
+        </div>
+    </div>
+  </div>
+  
+
 </section>
 
 

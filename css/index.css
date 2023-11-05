@@ -392,6 +392,11 @@ figcaption {
     height:400px;
     object-fit:cover;
   }
+
+  .preloader {
+    padding-left:15%;
+    padding-right:15%;
+  }
 }
 
 /* Small Laptop Sizing */
@@ -403,6 +408,7 @@ figcaption {
     width:100%;
 
   }
+
 }
 
 /* Tablet Sizing */
@@ -431,6 +437,10 @@ figcaption {
   }
   .support p {
     width:100%;
+  }
+  .preloader {
+    padding-left:5%;
+    padding-right:5%;
   }
 }
 

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const text = document.getElementById("text");
     const content = document.querySelector("body");
 
-    const preloaderShown = getCookie("preloaderShown");
+    const preloaderShown = getCookie("preloaderShown"); // To view the intro again (without the cookie), change this value to false.
 
     if (!preloaderShown) {
         preloader.style.transform = "translateY(0%)";
