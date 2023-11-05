@@ -72,7 +72,7 @@ main {
   border-color:#bd830e
 }
 
-.pagination-dots {
+.heropagination {
   position: absolute;
   bottom: 15vh;
   left: 125px;
@@ -455,7 +455,7 @@ figcaption {
     background-color:rgba(0, 0, 0, 0.612);
     width:75vw;
   }
-  .pagination-dots {
+  .heropagination {
     left:45% !important;
     bottom: 20% !important;
 
