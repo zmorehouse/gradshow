@@ -16,10 +16,9 @@ figcaption {
   all: unset;
 }
 
-
 /* Filter Controls Styling */
 .filter-controls {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
 }
 
@@ -34,7 +33,7 @@ figcaption {
 input {
   width: 22%;
   padding: 10px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
 }
 
@@ -46,7 +45,7 @@ select {
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   text-transform: uppercase;
 }
 
@@ -69,7 +68,7 @@ select {
 .gallery-item h3 {
   text-align: left;
   padding-top: 10px;
-  font-size:42px;
+  font-size: 42px;
 }
 
 .gallery-item p {
@@ -91,7 +90,6 @@ select {
 .gallery-item img {
   width: 100%;
   height: clamp(300px, 400px, 500px);
-
   object-fit: cover;
 }
 
@@ -99,7 +97,7 @@ select {
   padding: 0px;
   background-color: transparent;
   color: black;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
   margin-top: auto;
@@ -107,15 +105,14 @@ select {
 
 .gallery-item a:hover {
   transform: unset;
-  color: #BD830E;
+  color: #bd830e;
 }
-
 
 /* Responsive Views */
 /* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
   .gallery-item {
-    width: 31%; 
+    width: 31%;
   }
 }
 
@@ -129,50 +126,48 @@ select {
 /* Tablet Sizing (768px and below) */
 @media only screen and (max-width: 768px) {
   .maincontent {
-    padding-top:0%;
+    padding-top: 0%;
   }
   .pregal {
-    align-items:end;
-    gap:20px;
+    align-items: end;
+    gap: 20px;
   }
   input {
-    width: 100%; 
+    width: 100%;
   }
   select {
-    width: 100%; 
-    margin-top:10px;
+    width: 100%;
+    margin-top: 10px;
   }
   .gallery {
-    column-gap: 20px; 
-    row-gap: 40px; 
+    column-gap: 20px;
+    row-gap: 40px;
   }
   .gallery-item {
     width: 100%;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
   }
-
 }
 
 /* Phone Sizing (480px and below) */
 @media only screen and (max-width: 480px) {
   .pregal {
-    width:100%;
-    flex-wrap:wrap;
+    width: 100%;
+    flex-wrap: wrap;
   }
   .filter-controls {
-    width:100%;
+    width: 100%;
   }
 
   input {
-    width:92%;
+    width: 92%;
     margin-top: 25px;
   }
   .gallery {
-    column-gap: 10px; 
+    column-gap: 10px;
     row-gap: 30px;
   }
   .gallery-item {
     width: 100%;
   }
-
 }
