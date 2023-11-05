@@ -5,7 +5,7 @@ const lightbox = document.querySelector('.lightbox');
 
 openIcon.addEventListener('click', () => {
     lightbox.style.opacity = '0';
-    lightbox.style.display = 'block';
+    lightbox.style.display = 'flex';
     setTimeout(() => {
         lightbox.style.opacity = '1';
     }, 10);

@@ -277,7 +277,7 @@ footer > * {
 }
 
 footer h3 {
-  font-size: clamp(4vw, 2em, 5vw) !important;
+  font-size: clamp(50px, 1.5em, 30px) !important;
 }
 
 footer h4 {
@@ -505,6 +505,17 @@ p {
     padding-top:15% !important;
   }
 
+  .calltoaction h2 {
+    font-size: 50px;
+  }
+
+  .calltoaction a {
+    width:250px;
+    font-size:22px;
+  }
+
+
+
 
 }
 
@@ -536,7 +547,7 @@ p {
   }
 
   .calltoaction h2 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
   }
 
@@ -565,6 +576,20 @@ p {
     flex-wrap:wrap;
   }
 
+  .mainnav, .eventdetails {
+    padding-top:15px;
+    padding-bottom:15px;
+    justify-content:space-between;
+  }
+
+  .mainnav, .eventdetails p {
+    font-size:14px;
+  }
+
+  .mainnav {
+    padding-top: 25px;
+  }
+
 }
 
 /* Tablet Sizing */
@@ -588,6 +613,10 @@ p {
     margin-top: 50px;
   }
 
+  .calltoaction h2 {
+    font-size: 40px;
+  }
+
   .mainnav {
     background-color: black;
     width: 88%;
@@ -602,6 +631,8 @@ p {
     border-width: 0px;
     border-bottom-width: 15px !important;
     border-color: #bd830e;
+    padding-top:35px;
+    padding-bottom:35px;
   }
   .mainnav svg {
     width: 40%;

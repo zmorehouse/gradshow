@@ -3,12 +3,30 @@
     justify-content:space-between;
 }
 
+
 .maincontent p {
     font-size:18px !important;
 }
 
+.graduatepage h2, .graduatepage h1 {
+    font-size: clamp(55px, 7vw, 100px);
+    width: 100%;
+
+}
+
+.graduatepage h1 {
+    text-align:left;
+}
+
 .graduatepage h2 {
-    font-size: 100px;
+    text-align:right;
+}
+
+.artistmeta h2, .artiststatement h2 {
+    font-size:clamp(40px, 5vw, 80px);
+}
+
+.graduatepage h2 {
     color:#BD830E;
 }
 
@@ -117,7 +135,7 @@ figure {
 
 }
 
-img {
+.artwork img {
     width:100%;
     border-radius:10px;
 margin-top:15px;
@@ -147,6 +165,10 @@ margin-top:15px;
     margin:15px;
     transition:0.4s;
 
+}
+
+.artiststatement.responsive {
+    display:none;
 }
 
 .maincontent hr {
@@ -195,7 +217,8 @@ margin-top:15px;
     width:100%;
     text-align:center;
     color:white;
-    margin-top:75px;
+    margin-top:25px;
+    margin-bottom:25px;
 
 }
 .lightbox i {
@@ -205,28 +228,89 @@ margin-top:15px;
     width:100%;
 }
 
+.artiststatement.desktop {
+    display:block;
+}
+
+.artiststatement.mobile {
+    display:none;
+}
+
+.calltoaction {
+    position:relative;
+    z-index:999;
+}
+
+footer {
+    position:relative;
+    z-index:999;
+
+}
+
 /* Responsive Views */
 /* Large Laptop Sizing */
 @media only screen and (max-width: 1368px) {
-    
+
+    .artistmeta > div {
+        width:100% ;
+        flex-wrap:wrap;
+    }
+
+    .artistmeta > div > p {
+        margin:5px;
+    }
+
+    .artwork {
+        margin-right: 0px;
+      }
+      
+
 }
 
-/* Small Laptop Sizing */
-@media only screen and (max-width: 1024px )   {
 
-}
 
-/* Tablet Sizing */
-@media only screen and (max-width: 768px)   {
+/* Laptop And Tablet Sizing */
+@media only screen and (max-width: 1024px)   {
+
+    .pagetitle h2 {
+        display:none;
+    }
+
+    .pagetitle {
+        margin:0px;
+    }
+
+    .pagetitle h1 {
+        color:black;
+    }
+
+    .maincontent {
+        padding-bottom:75px !important;
+    }
+
+    .artiststatement.desktop {
+        display:none;
+    }
+
+    .artiststatement.responsive {
+        display:block;
+    }
+
+    .artiststatement {
+        margin:0px;
+        border-radius:0;
+    }
+
     .graduatepage h1 {
         position:fixed;
-        top:44%;
-        left:35%;
+
         font-size:90px;
         transform:rotate(270deg);
         width:500px;
         z-index:5 !important;
         text-align:right;
+        right:30px;
+        transform-origin: 100% ;
     }
     
     .maincontent {
@@ -235,6 +319,31 @@ margin-top:15px;
 
     .maincontent > div {
         width:87.5% !important;    
+    }
+
+    .maincontent .lightbox {
+        width:100% !important;
+    }
+
+    .lightbox figure {
+        height:unset;
+    }
+
+    .lightbox figcaption {
+        margin-top:0px;
+    }
+
+    .lightbox {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+
+    .lightbox p {
+        margin-left:15px;
+        margin-right:15px;
+        font-size:16px !important;
     }
 
     .artwork {
@@ -249,7 +358,7 @@ margin-top:15px;
     }
 
     .artistmeta h2 {
-        font-size:60px;
+        font-size:40px;
     }
 
     p {
@@ -274,15 +383,20 @@ margin-top:15px;
     .artiststatement hr {
         width:100%;
     }
-    .artiststatement h2 {
-        font-size:50px;
 
+    .graduatelinks {
+        margin-top:25px;
     }
+
 
 }
 
 /* Phone Sizing */
 @media only screen and (max-width: 480px) {
+    .graduatepage h1 {
 
+        font-size:65px;
+        right:20px;
+            }
 }
 
