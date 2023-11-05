@@ -6,30 +6,28 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Support the Gradshow</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/support.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Site-wide global styles -->
+    <link rel="stylesheet" href="css/support.css"> <!-- Page specific styles -->
 
-
-    <!-- Fonts -->
+    <!-- Linking the relevant fonts via Google (Bebas Neue & Open Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-    <!-- Scripts -->
-    <script src="/scripts/templates.js"></script>
+    <!-- Enqueing Font Awesome to use for icons-->
     <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript to inject global templates, these include the Header, Footer & CTA -->
+    <script src="scripts/templates.js"></script>
 
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="globalheader"></header>
 
+    <header class="globalheader"></header> <!-- Header section being injected by /templates.js-->
 
-    <!-- Page Title Section -->
     <section class="pagetitle">
         <h1> Support The <span id='highlighttext'>Gradshow</span> </h1>
     </section>
@@ -90,10 +88,10 @@
         </div>
     </section>
 
-    <section class="calltoaction">
-    </section>
-    <!-- Footer -->
-    <footer class="globalfooter"></footer>
+    <section class="calltoaction"> </section> <!-- CTA section being injected by /templates.js-->
+
+    <footer class="globalfooter"></footer> <!-- Footer section being injected by /templates.js-->
+
 </body>
 
 </html>

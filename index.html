@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Gradshow 2023 | Australian National University
     </title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Site-wide global styles -->
+    <link rel="stylesheet" href="css/homepage.css"> <!-- Page specific styles -->
 
-    <!-- Fonts -->
+    <!-- Linking the relevant fonts via Google (Bebas Neue & Open Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 
-    <!-- Scripts -->
+    <!-- Enqueing Font Awesome to use for icons-->
     <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
-    <script src="/scripts/templates.js"></script>
-    <script src="/scripts/carousel.js"></script>
-    <script src="/scripts/heroslider.js"></script>
-    <script src="/scripts/preloader.js"></script>
 
+    <!-- JavaScript to inject global templates, these include the Header, Footer & CTA -->
+    <script src="scripts/templates.js"></script>
 
+    <!-- JavaScript containing Preload Animation Functionality. This needs to be edited to see the animation more than once on the same browser. -->
+    <script src="scripts/preloader.js"></script>
 
+    <!-- JavaScript containing Hero Slider & Carousel Functionalities-->
+    <script src="scripts/heroslider.js"></script>
+    <script src="scripts/carousel.js"></script>
 
 </head>
-<body>
-    <!-- Header -->
-    <header class="globalheader"></header>
 
-    <section class="preloader">
+<body>
+
+    <header class="globalheader"></header> <!-- Header section being injected by /templates.js-->
+
+    <section class="preloader"> <!-- Preloader section managed by /preloader.js-->
         <img src="images/logos/anu-icon.png" id="logo">
         <p id="text">
-            The Australian National University acknowledges, celebrates and pays our respects to the Ngunnawal and Ngambri
-        people of the Canberra region and to all First Nations Australians on whose traditional lands we meet and work,
-        and whose cultures are among the oldest continuing cultures in human history.
+            The Australian National University acknowledges, celebrates and pays our respects to the Ngunnawal and
+            Ngambri
+            people of the Canberra region and to all First Nations Australians on whose traditional lands we meet and
+            work,
+            and whose cultures are among the oldest continuing cultures in human history.
         </p>
     </section>
 
-
-    <!-- Main -->
     <main>
-        <div class="hero-slider">
+        <div class="hero-slider"> <!-- Hero slider section managed by /heroslider.js-->
             <div class="landing-slide" id="one">
-                <div class="slide-content" >
+                <div class="slide-content">
                     <h2>Those Left Behind</h2>
                     <p>Detail, 2022, Earthenware casting slip, cobalt black underglaze</p>
                     <p><em>ADELINE JEFFERY // B. Visual Arts & Art History</em></p>
@@ -54,7 +60,7 @@
             </div>
 
             <div class="landing-slide" id="two">
-                <div  class="slide-content">
+                <div class="slide-content">
                     <h2>Coffee Cup</h2>
                     <p>Detail, 2022, Glazed slip cast porcelain</p>
                     <p> <em> ALICIA COX // B. Visual Arts </em></p>
@@ -63,39 +69,20 @@
             </div>
 
             <div class="landing-slide" id="three">
-                <div class="slide-content" >
+                <div class="slide-content">
                     <h2>Girl Loves To Party</h2>
                     <p>Complete work, 2022, Oil on canvas.</p>
                     <p> <em> LAURA FENDERSON // B. Visual Arts</em></p>
                     <a href="laura-fenderson.html">View Their Work<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
-
         </div>
-        <div class="pagination-dots"></div>
-
+        <div class="pagination-dots"></div> <!-- Hero slider controls (pagination)-->
     </main>
-      
-    
-    <div class="importantinfo">
-        <!-- 
-        <div>
-            <i class="fa-solid fa-location-pin"></i>
-            <p> ANU, BUILDING 105, CHILDERS STREET  </p>
-        </div>
-        <div>
-            <i class="fa-solid fa-clock"></i>
-            <p> OPEN 10AM TO 4PM FROM 25/11 TO 4/12 </p>
-        </div>
-        -->
-    </div>
 
-    <section class="graduateslist">
+    <section class="graduateslist"> <!-- Carousel section managed by /carousel.js-->
         <h2> Meet your <span id="highlighttext">2023 </span>Exhibitors </h2>
-       
-
-
-        <section class="carousel">
+        <div class="carousel">
             <div class="carousel-container">
                 <div class="carousel-item">
                     <figure>
@@ -162,7 +149,8 @@
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img src="images/graduateworks/mary-anne-sadleir.jpg" alt="Mary Anne Sadleir's Graduate Artwork">
+                        <img src="images/graduateworks/mary-anne-sadleir.jpg"
+                            alt="Mary Anne Sadleir's Graduate Artwork">
                     </figure>
                     <figcaption>
                         <h3>Mary-Anne Sadleir</h3>
@@ -187,38 +175,36 @@
                         <p>Bachelor of Visual Arts / Bachelor of Environment and Sustainability</p>
                     </figcaption>
                 </div>
-
-
             </div>
-
-        </section>
+        </div>
+        
+        <!-- Carousel controls (pagination, previous and next arrows)-->
         <div class="carouselcontrols"> 
-
-            <i class="fa-solid fa-chevron-left prev-btn" ></i>
+            <i class="fa-solid fa-chevron-left prev-btn"></i>
             <span class="pagination"></span>
-    
             <i class="fa-solid fa-chevron-right next-btn"></i>
-    
         </div>
 
-
-        <a href="graduates.html"> 
+        <a href="graduates.html">
             See Our Full List of Graduates
             <i class="fa-solid fa-arrow-right-long"></i>
         </a>
     </section>
 
-    
+
     <section class="about">
         <div>
             <h2> About Gradshow <span id="highlighttext">'23 </span></h2>
             <p>
-                On behalf of the Australian National University,  School of Art & Design, I am delighted to share with you the work of our 2023 graduating cohort, spanning art history and curatorship, design, and visual arts.
-                <br/> <br/>
-                Excitedly, the 2022 Graduating Exhibition is now open to public! This exhibition marks a huge achievement, despite the challenges of the past few years. 
-                <br/> <br/>
-                The School is incredibly proud of the works of all our students over 2023.
-            </p>
+                On behalf of the Australian National University, School of Art & Design, I am delighted to share with
+                you the work of our 2023 graduating cohort, spanning art history and curatorship, design, and visual
+                arts.
+                </p><p>
+                    Excitedly, the 2022 Graduating Exhibition is now open to public! This exhibition marks a huge
+                    achievement, despite the challenges of the past few years.
+                </p><p>
+                    The School is incredibly proud of the works of all our students over 2023.
+                </p>
             <a href="about.html">
                 More About The Gradshow
                 <i class="fa-solid fa-arrow-right-long"></i>
@@ -226,52 +212,51 @@
         </div>
         <div>
             <img src="images/gallery.jpg" alt="An image of the School of Art & Designs' Gallery">
-            
+
         </div>
     </section>
 
-    <section class="sponsors">
+    <section class="sponsors"> <!-- Hypothetical sponsors logo section-->
         <img src="images/logos/anu-logo.webp" alt="ANU Logo" class="logo">
         <img src="images/logos/nga-logo.png" alt="NGA Logo" class="logo">
         <img src="images/logos/nsfa-logo.png" alt="NFSA Logo" class="logo">
         <img src="images/logos/anusa-logo.png" alt="ANUSA Logo" class="logo">
         <img src="images/logos/woroni-logo.png" alt="Woroni Logo" class="logo">
-        
     </section>
 
     <section class="support">
         <h2> Support Our <span id="highlighttext">Graduates </span></h2>
-        <p> There are a number of ways you can support our 2023 graduates. Outside attending the exhibiton, there are a handful of ways to help out, including buying artworks and donating to our various artists support schemes. </p>
-            <div class="supportboxes">
-                <div>
-                    <img src="images/graduateworks/carl-dino.jpg" alt="Carl Dino's Artwork">
-                    <a>
-                        Purchase an Artwork
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                </div>
-                <div>
-                    <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson's Artwork">
-                    <a>
-                        Opportunities Fund
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                </div>
-                <div>
-                    <img src="images/graduateworks/savannah-wheeler.jpg" alt="Savannah Wheeler's Artwork ">
-                    <a>
-                       Emerging Artists Support Scheme
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                </div>
+        <p> There are a number of ways you can support our 2023 graduates. Outside attending the exhibiton, there are a
+            handful of ways to help out, including buying artworks and donating to our various artists support schemes.
+        </p>
+        <div class="supportboxes">
+            <div>
+                <img src="images/graduateworks/carl-dino.jpg" alt="Carl Dino's Artwork">
+                <a>
+                    Purchase an Artwork
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
             </div>
+            <div>
+                <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson's Artwork">
+                <a>
+                    Opportunities Fund
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <div>
+                <img src="images/graduateworks/savannah-wheeler.jpg" alt="Savannah Wheeler's Artwork ">
+                <a>
+                    Emerging Artists Support Scheme
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section class="calltoaction">
-
-    </section>
-    <!-- Footer -->
-    <footer class="globalfooter"></footer>
+    <section class="calltoaction"></section> <!-- CTA section being injected by /templates.js-->
+ 
+    <footer class="globalfooter"></footer> <!-- Footer section being injected by /templates.js-->
 </body>
-</html>
 
+</html>

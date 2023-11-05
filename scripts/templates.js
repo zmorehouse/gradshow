@@ -124,7 +124,6 @@ function insertFooter() {
             <li> <a href="contact.html"> Events </a> </li>
             <li> <a href="contact.html"> Contact </a> </li>
             <li> <a href="acknowledgements.html"> Acknowledgements </a> </li>
-            <li> <a href="sitemap.html"> Sitemap </a> </li>
         </ul>
     </nav>
 </div>

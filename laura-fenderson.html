@@ -6,52 +6,55 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Laura Fenderson | Graduate Work</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/graduates.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Site-wide global styles -->
+    <link rel="stylesheet" href="css/graduates.css"> <!-- Page specific styles -->
 
-
-    <!-- Fonts -->
+    <!-- Linking the relevant fonts via Google (Bebas Neue & Open Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-    <!-- Scripts -->
-    <script src="/scripts/lightbox.js"></script>
-    <script src="/scripts/templates.js"></script>
+    <!-- Enqueing Font Awesome to use for icons-->
     <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript to inject global templates, these include the Header, Footer & CTA -->
+    <script src="scripts/templates.js"></script>
+
+    <!-- JavaScript containing Lightbox Functionality-->
+    <script src="scripts/lightbox.js"></script>
 
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="globalheader"></header>
 
+    <header class="globalheader"></header><!-- Header section being injected by /templates.js-->
 
-    <!-- Page Title Section -->
     <section class="pagetitle graduatepage">
         <h1> Laura Fenderson </h1>
         <h2> This Girl Loves to Party </h2>
     </section>
 
     <section class="maincontent">
-        <a href="graduates.html" id="back"><i class="fa-solid fa-chevron-left fa-lg"></i> Back  </a >
+        <a href="graduates.html" id="back"><i class="fa-solid fa-chevron-left fa-lg"></i> Back </a>
         <div>
             <div class="artwork">
                 <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson">
-                <i class="fa-solid fa-expand open" ></i>
+                <i class="fa-solid fa-expand open"></i> <!-- Icon to open lightbox-->
 
             </div>
         </div>
 
+        <!-- Lighbox div - This is hidden until the expand icon is clicked.-->
         <div class="lightbox">
-            <i class="fa-solid fa-x close"></i>
+            <i class="fa-solid fa-x close"></i> <!-- Icon to close lightbox-->
             <figure> <img src="images/graduateworks/laura-fenderson.jpg" alt="Laura Fenderson"> </figure>
-            <figcaption> <p>This Girl Loves to Party by Laura Fenderson |  Photographer: Laura Fenderson
+            <figcaption>
+                <p>This Girl Loves to Party by Laura Fenderson | Photographer: Laura Fenderson
 
-                "This Girl Loves to Party", Complete work, 2022, Oil on canvas  </p> </figcaption>
+                    "This Girl Loves to Party", Complete work, 2022, Oil on canvas </p>
+            </figcaption>
         </div>
 
         <div>
@@ -65,45 +68,59 @@
                 <p>
                     Photographer: Laura Fenderson
 
-"This Girl Loves to Party (with the girls)", Complete work, 2022, Oil on canvas
+                    "This Girl Loves to Party (with the girls)", Complete work, 2022, Oil on canvas
                 </p>
             </div>
             <div class="artiststatement desktop">
                 <h2> Artists <span style="color:#BD830E;"> Statement</span> </h2>
                 <hr>
                 <p>
-                    This series is an exploration of my youth culture - experiences of community, connection, joy and intimacy- filtered through an introspective lens. My youth has been affected by times of prolonged isolation and uncertainty, this series is my attempt of reclaiming what I know to be true in the beauty of my lived experience. I have used personal photography as the source material for this work. I am interested in photography as a medium as it can provide the viewer an immortalised candid depiction of reality in an objective, unfiltered form. The work explores the aesthetic and philosophical principles of the photograph - with the aim to investigate the way in which the photo has defined my world. This series purposefully moves the photograph into the painted realm in order to offer the images- the people and emotions they reflect- a new reality. I use painterly abstraction to remove these works from the photographic source to allow the painting to become its own kind of reality.</p>
-<div class="graduatelinks">
-    <a href="https://google.com" target="_blank"> <i class="fa-solid fa-globe" style="color: #ffffff;"></i> Portfolio </a>
-    <a href="https://www.instagram.com/laura.fendi/" target="_blank"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram </a>
-    <a href="https://linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> LinkedIn </a>
-
-</div>
-
+                    This series is an exploration of my youth culture - experiences of community, connection, joy and
+                    intimacy- filtered through an introspective lens. My youth has been affected by times of prolonged
+                    isolation and uncertainty, this series is my attempt of reclaiming what I know to be true in the
+                    beauty of my lived experience. I have used personal photography as the source material for this
+                    work. I am interested in photography as a medium as it can provide the viewer an immortalised candid
+                    depiction of reality in an objective, unfiltered form. The work explores the aesthetic and
+                    philosophical principles of the photograph - with the aim to investigate the way in which the photo
+                    has defined my world. This series purposefully moves the photograph into the painted realm in order
+                    to offer the images- the people and emotions they reflect- a new reality. I use painterly
+                    abstraction to remove these works from the photographic source to allow the painting to become its
+                    own kind of reality.</p>
+                <!-- Set of graduate links. These contain dummy links as only one is provided on the current website-->
+                <div class="graduatelinks">
+                    <a href="https://google.com" target="_blank"> <i class="fa-solid fa-globe"
+                            style="color: #ffffff;"></i> Portfolio </a>
+                    <a href="https://www.instagram.com/laura.fendi/" target="_blank"> <i class="fa-brands fa-instagram"
+                            style="color: #ffffff;"></i> Instagram </a>
+                    <a href="https://linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin"
+                            style="color: #ffffff;"></i> LinkedIn </a>
+                </div>
             </div>
-    
         </div>
-
-
-
     </section>
 
-    
+    <!-- Additional section to accomodate for responsive view. This is shown on tablet sizes, allowing the h1 to scroll underneath it-->
     <section class="artiststatement responsive">
         <h2> Artists <span style="color:#BD830E;"> Statement</span> </h2>
         <hr>
         <p>
-            My work explores the gendered symbolism of domestic functional objects and my connection to them. I create familiar objects that are subverted via their affordances in order to recode them from function to dysfunction. I am interested in creating objects that silently protest their intended purpose and therefore our preconceived notions of how they, and women, should behave.</p><div class="graduatelinks">
-<a href="https://google.com" target="_blank"> <i class="fa-solid fa-globe" style="color: #ffffff;"></i> Portfolio </a>
-<a href="https://www.instagram.com/aliciacoxceramics/" target="_blank"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram </a>
-<a href="https://linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> LinkedIn </a>
+            My work explores the gendered symbolism of domestic functional objects and my connection to them. I create
+            familiar objects that are subverted via their affordances in order to recode them from function to
+            dysfunction. I am interested in creating objects that silently protest their intended purpose and therefore
+            our preconceived notions of how they, and women, should behave.</p>
+        <div class="graduatelinks">
+            <a href="https://google.com" target="_blank"> <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                Portfolio </a>
+            <a href="https://www.instagram.com/aliciacoxceramics/" target="_blank"> <i class="fa-brands fa-instagram"
+                    style="color: #ffffff;"></i> Instagram </a>
+            <a href="https://linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin"
+                    style="color: #ffffff;"></i> LinkedIn </a>
 
-</section>
+    </section>
 
-    <section class="calltoaction">
-    </section>  
-    <!-- Footer -->
-    <footer class="globalfooter"></footer>
+    <section class="calltoaction"></section> <!-- CTA section being injected by /templates.js-->
+
+    <footer class="globalfooter"></footer> <!-- Footer section being injected by /templates.js-->
 </body>
 
 </html>

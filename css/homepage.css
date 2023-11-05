@@ -66,6 +66,12 @@ body {
 
 }
 
+main {
+  border-style:solid;
+  border-width:0px 0px 20px 0px;
+  border-color:#bd830e
+}
+
 .pagination-dots {
   position: absolute;
   bottom: 15vh;
