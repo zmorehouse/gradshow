@@ -13,8 +13,7 @@ footer {
 header {
   flex-wrap: wrap;
   background-color: transparent;
-  padding-bottom: 30%;
-  margin-bottom: -40% !important;
+  margin-bottom:-150px;
 }
 
 header a,
@@ -277,9 +276,8 @@ footer > * {
   display: none;
 }
 
-footer h2,
-h3 {
-  font-size: 50px !important;
+footer h3 {
+  font-size: clamp(4vw, 2em, 5vw) !important;
 }
 
 footer h4 {
@@ -503,6 +501,27 @@ p {
   .calltoaction .large {
     display:none;
   }
+  .pagetitle {
+    padding-top:15% !important;
+  }
+
+
+}
+
+/* Optimal breaking point for hamburger menu */
+@media only screen and (max-width: 1170px) {
+  .mobilenav {
+    display:block;
+
+  }
+  .desktopnav {
+    display:none;
+  }
+
+  .menulogo {
+    width:30% !important;
+  }
+
 }
 
 /* Small Laptop Sizing */
@@ -534,17 +553,18 @@ p {
     gap:15px;
   }
 
-  .mobilenav {
-    display:block;
-
-  }
-  .desktopnav {
-    display:none;
+  .pagetitle {
+    padding-top:20% !important;
   }
 
-  .menulogo {
-    width:30% !important;
+  footer > div {
+    width:48%;
   }
+
+  footer {
+    flex-wrap:wrap;
+  }
+
 }
 
 /* Tablet Sizing */
@@ -601,9 +621,8 @@ p {
   }
 
 
-  footer svg {
-    width: 100%;
-    padding-bottom: 25px;
+  footer {
+    gap:0px !important;
   }
 
   .calltoaction > div:nth-of-type(3) {
@@ -626,6 +645,9 @@ p {
   .menulogo {
     display: flex;
   }
+  .pagetitle {
+    padding-top: 150px !important;
+  }
 }
 
 /* Phone Sizing */
@@ -634,11 +656,16 @@ p {
   .menulogo {
     width:50% !important;
   }
+
+  footer h3 {
+    font-size:30px !important;
+  }
 }
 
 .hamburger {
   width: 30px;
   height: 26px;
 }
+
 
 
