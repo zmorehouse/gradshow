@@ -1,5 +1,5 @@
-/* Base Styles (for all screen sizes) */
-
+/* Graduates Gallery Page Styling */
+/* Main Content Styling */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +16,41 @@ figcaption {
   all: unset;
 }
 
+
+/* Filter Controls Styling */
+.filter-controls {
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+.pregal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: 10px;
+}
+
+input {
+  width: 22%;
+  padding: 10px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+select {
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+
+/* Individual Gallery Item Styling */
 .gallery-item {
   text-align: center;
   width: clamp(23%, 6vw, 24.5%);
@@ -75,65 +110,26 @@ figcaption {
   color: #BD830E;
 }
 
-.filter-controls {
-  font-family: 'Open Sans';
-  font-size: 14px;
-}
-
-.pregal {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-right: 10px;
-}
-
-input {
-  width: 22%;
-  padding: 10px;
-  font-family: 'Open Sans';
-  font-size: 14px;
-}
-
-select {
-  border-style: solid;
-  border-width: 1px;
-  background-color: white;
-  color: black;
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
-}
 
 /* Responsive Views */
-
-
-
-/* Large Laptop Sizing */
+/* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
   .gallery-item {
     width: 31%; 
   }
 }
 
-/* Small Laptop Sizing */
+/* Small Laptop Sizing (1024px and below) */
 @media only screen and (max-width: 1024px) {
   .gallery-item {
     width: clamp(47%, 5vw, 48%);
   }
 }
 
-/* Tablet Sizing */
+/* Tablet Sizing (768px and below) */
 @media only screen and (max-width: 768px) {
-  .gallery {
-    column-gap: 20px; 
-    row-gap: 40px; 
-  }
-  .gallery-item {
-    width: 100%;
-    margin-bottom: 30px; 
+  .maincontent {
+    padding-top:0%;
   }
   .pregal {
     align-items:end;
@@ -146,25 +142,23 @@ select {
     width: 100%; 
     margin-top:10px;
   }
-  .maincontent {
-    padding-top:0%;
-  }
-}
-
-/* Phone Sizing */
-@media only screen and (max-width: 480px) {
   .gallery {
-    column-gap: 10px; 
-    row-gap: 30px;
+    column-gap: 20px; 
+    row-gap: 40px; 
   }
   .gallery-item {
     width: 100%;
+    margin-bottom: 30px; 
   }
+
+}
+
+/* Phone Sizing (480px and below) */
+@media only screen and (max-width: 480px) {
   .pregal {
     width:100%;
     flex-wrap:wrap;
   }
-
   .filter-controls {
     width:100%;
   }
@@ -172,6 +166,13 @@ select {
   input {
     width:92%;
     margin-top: 25px;
+  }
+  .gallery {
+    column-gap: 10px; 
+    row-gap: 30px;
+  }
+  .gallery-item {
+    width: 100%;
   }
 
 }

@@ -1,289 +1,277 @@
+/* Contact Page Styling */
+/* Main Content Styling */
 .maincontent {
-    display:flex;
-    gap:1%;
-    align-items:center;
+  display: flex;
+  gap: 1%;
+  align-items: center;
 }
-
-.contactform {
-    width:42%;
-    padding-right:50px;
-}
-
-.contactinfo {
-    width:25%;
-    border-radius:10px;
-    padding:35px;
-    padding-top:100px;
-    padding-bottom:100px;
-    background-color:white;
-    filter: drop-shadow(5px 5px 5px #00000017);
-    margin:15px;
-    transition:0.4s;
-
-}
-
-.contactinfo:hover {
-   transform:translateY(-15px);
-   transition:0.4s;
-}
-
-
-.contactinfo a {
-    display:flex;
-flex-direction:row;
-width:100%;
-align-items:center;
-}
-
-.contactinfo a:hover {
-    transform:unset;
-}
-
-.contactinfo i {
- margin-right:15px;
-}
-
 
 .maincontent h2 {
-    font-size:50px;
+  font-size: 50px;
 }
 
 .maincontent h3 {
-    font-size:30px !important;
-    margin-top:10px;
+  font-size: 30px !important;
+  margin-top: 10px;
 }
 
-input {
-    width:100%;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-top:5px;
-    margin-bottom:5px;
-    border-style:none;
-    background-color:#F2F2F2;
+/* Contact Information Box Styling */
+.contactinfo {
+  width: 25%;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: white;
+  filter: drop-shadow(5px 5px 5px #00000017);
+  margin: 15px;
+  transition: 0.4s;
 }
 
-form {
-    display:flex;
-    flex-wrap:wrap;
-    gap:5px;
-}
-
-form div { 
-    width:100%;
-}
-
-form > div:last-child {
-    width:100%;
-}
-
-form > div:last-child > * {
-    width:99%;
-}
-
-textarea {
-    padding-top:50px;
-    padding-bottom:50px;
-    border-style:none;
-    background-color:#F2F2F2;
+.contactinfo:hover {
+  transform: translateY(-15px);
+  transition: 0.4s;
 }
 
 .contactinfo a {
-    all: unset;
-    transition:0.25s;
-    display:flex;
-    align-items:center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
 }
 
 .contactinfo a:hover {
-background-color:transparent;
-    color:#BD830E;
-    cursor:pointer;
+  transform: unset;
+}
+
+.contactinfo i {
+  margin-right: 15px;
+}
+
+.contactinfo a {
+  all: unset;
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+}
+
+.contactinfo a:hover {
+  background-color: transparent;
+  color: #bd830e;
+  cursor: pointer;
 }
 
 .contactinfo a:hover i {
-    transform:unset;
+  transform: unset;
 }
 
+/* Form Styling */
+.contactform {
+  width: 42%;
+  padding-right: 50px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-style: none;
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+form div {
+  width: 100%;
+}
+
+form > div:last-child {
+  width: 100%;
+}
+
+form > div:last-child > * {
+  width: 99%;
+}
+
+textarea {
+  padding: 50px 0;
+  border-style: none;
+  background-color: #f2f2f2;
+}
+
+label {
+  font-family: "Open Sans";
+  font-weight: 200;
+  font-size: 16px !important;
+}
 
 #submitbutton {
-width:100%;
-border-radius:0;
-border-style:solid;
-border-width:1px;
-border-color:white;
-text-transform:uppercase;
-font-family:'Bebas Neue';
-font-size:25px;
-padding:10px 15px 10px 15px;
-background-color:#BD830E;
-color:white;
-margin-top:10px;
-margin-bottom:10px;
-display: flex;
-justify-content: space-between;
-transition:0.4s;
-
+  width: 100%;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  padding: 10px 15px 10px 15px;
+  background-color: #bd830e;
+  color: white;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.4s;
 }
 
 #submitbutton:hover {
-    background-color: #313131;
+  background-color: #313131;
 }
 
+/* Exhibition Information Styling */
 .exhibitioninfo {
-    background-color:black;
-    color:white;
-
+  background-color: black;
+  color: white;
 }
 
 .exhibitioninfo > * {
-    width:33%;
+  width: 33%;
 }
 
 .exhibitioninfo h2 {
-    font-size:clamp(30px, 5vw, 50px);
+  font-size: clamp(30px, 5vw, 50px);
 }
 
-
 .exhibitioninfo div {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .exhibitioninfo div p {
-    font-weight:600;
-    text-transform:uppercase;
-    margin-left:15px;
-}
-
-label { 
-    font-family:'Open Sans';
-    font-weight:200;
-    font-size:16px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 15px;
 }
 
 hr {
-    color:#BD830E;
+  color: #bd830e;
 }
 
 /* Responsive Views */
 /* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
-    .maincontent {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+  .maincontent {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 
-    .contactform {
-        width: 100%;
-        padding-right: 0;
-    }
+  .contactform {
+    width: 100%;
+    padding-right: 0;
+  }
 
-    .contactinfo {
-        width: 100%;
-        padding: 25px !important;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        margin: 0;
-    }
+  .contactinfo {
+    width: 100%;
+    padding: 25px !important;
+    padding: 50px 0;
+    margin: 0;
+  }
 
-    .exhibitioninfo {
-        width: 100%;
-        padding-top: 35px !important;
-        padding-bottom: 25px;
-        gap: 0;
-    }
+  .exhibitioninfo {
+    width: 100%;
+    padding-top: 35px !important;
+    padding-bottom: 25px;
+    gap: 0;
+  }
 }
 
 /* Small Laptop Sizing (1024px and below) */
 @media only screen and (max-width: 1024px) {
-    .contactform {
-        width: 100%;
-        padding-right: 0;
-    }
+  .contactform {
+    width: 100%;
+    padding-right: 0;
+  }
 
-    .contactinfo {
-        width: 100%;
-        padding: 25px !important;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        margin: 0;
-    }
+  .contactinfo {
+    width: 100%;
+    padding: 25px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
 
-    .exhibitioninfo {
-        width: 100%;
-        padding-top: 35px !important;
-        padding-bottom: 25px;
-        gap: 0;
-    }
+  .exhibitioninfo {
+    width: 100%;
+    padding-top: 35px !important;
+    padding-bottom: 25px;
+    gap: 0;
+  }
 }
 
 /* Tablet Sizing (768px and below) */
 @media only screen and (max-width: 768px) {
-    .maincontent {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-    }
+  .maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 
-    .contactform {
-        width: 100%;
-        padding-right: 0;
-    }
+  .contactform {
+    width: 100%;
+    padding-right: 0;
+  }
 
-    .contactinfo {
-        width: 100%;
-        padding: 25px !important;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        margin: 0;
-    }
+  .contactinfo {
+    width: 100%;
+    padding: 25px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
 
-    .exhibitioninfo {
-        width: 100%;
-        padding-top: 35px !important;
-        padding-bottom: 25px;
-        gap: 0;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-    }
+  .exhibitioninfo {
+    width: 100%;
+    padding-top: 35px !important;
+    padding-bottom: 25px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .exhibitioninfo > * {
-        width: 100%;
-    }
-
+  .exhibitioninfo > * {
+    width: 100%;
+  }
 }
 
 /* Phone Sizing (480px and below) */
 @media only screen and (max-width: 480px) {
-    .maincontent {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+  .maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-    .contactform {
-        width: 100%;
-        padding-right: 0;
-    }
+  .contactform {
+    width: 100%;
+    padding-right: 0;
+  }
 
-    .contactinfo {
-        width: 100%;
-        padding: 25px !important;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        margin: 0;
-    }
+  .contactinfo {
+    width: 100%;
+    padding: 25px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
 
-    .exhibitioninfo {
-        width: 100%;
-        padding-top: 35px !important;
-        padding-bottom: 25px;
-        gap: 0;
-    }
+  .exhibitioninfo {
+    width: 100%;
+    padding-top: 35px !important;
+    padding-bottom: 25px;
+    gap: 0;
+  }
 }
-
-

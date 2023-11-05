@@ -1,155 +1,146 @@
+/* About Us Page Styling */
+/* Main Content Styling */
 .maincontent {
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .maincontent h2 {
-    font-size:50px;
+  font-size: 50px;
 }
 
 .maincontent h3 {
-    font-size:20px !important;
-    font-family:'Open Sans';
-    font-weight:600;
-    margin-top:15px;
-    margin-bottom:25px;
- 
+  font-size: 20px !important;
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin: 15px 0 25px 0;
 }
 
 .maincontent hr {
-    color:#BD830E;
-    display:none;
+  color: #bd830e;
+  display: none;
 }
 
 .maincontent img {
-    width:100%;
-    height:450px;
-    object-fit:cover;
-    border-radius:5px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .staggered {
-    display:flex;
-    flex-direction:row;
-    gap:3%;
-    align-items: end;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  align-items: end;
 }
 
-
-
 .staggered div {
-    width:50%;
+  width: 50%;
 }
 
 .staggered p {
-    margin:0px;
+  margin: 0px;
 }
 
+/* Author Box Styling */
 #authorbox {
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    align-items:center;
-    margin-top:25px;
-
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-top: 25px;
 }
 
 #authorbox div:last-child {
-    border-style:solid;
-    border-width:0px;
-    border-left-width:1px;
-    padding:15px 20px 15px 20px
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 1px;
+  padding: 15px 20px 15px 20px;
 }
 
 #authorbox p {
-    margin:5px;
+  margin: 5px;
 }
 
 #beckdavis {
-    width:100px;
-    height:100px;
-    border-radius:100px;
-    object-fit:cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
 }
 
 /* Responsive Views */
 /* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
-    .maincontent h2 {
-        font-size: 40px;
-    }
-    .maincontent h3 {
-        font-size: 18px;
-        margin-top: 12px;
-        margin-bottom: 20px;
-    }
-    .maincontent img {
-        height: 400px;
-    }
-    .staggered {
-        gap: 2%;
-    }
-    #authorbox {
-        margin-top: 20px;
-    }
-
+  .maincontent h2 {
+    font-size: 40px;
+  }
+  .maincontent h3 {
+    font-size: 18px;
+    margin: 12px 0 20px 0;
+  }
+  .maincontent img {
+    height: 400px;
+  }
+  .staggered {
+    gap: 2%;
+  }
+  #authorbox {
+    margin-top: 20px;
+  }
 }
-
 
 /* Small Laptop Sizing (1024px and below) */
 @media only screen and (max-width: 1024px) {
-    .staggered div {
-        width:100%;
-    }
-    .staggered {
-        flex-direction: column;
-        gap: 10px;
-        
-    }
+  .staggered div {
+    width: 100%;
+  }
+  .staggered {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* Tablet Sizing (768px and below) */
 @media only screen and (max-width: 768px) {
-    .maincontent h2 {
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-    .maincontent h3 {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-    .maincontent hr {
-        display: block;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .staggered {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .maincontent h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .maincontent h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .maincontent hr {
+    display: block;
+    margin: 15px 0;
+  }
+  .staggered {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* Phone Sizing (480px and below) */
 @media only screen and (max-width: 480px) {
-    .maincontent h2 {
-        font-size: 18px;
-    }
-    .maincontent h3 {
-        font-size: 14px;
-    }
-    .maincontent img {
-        height: 300px;
-    }
-    .staggered {
-        gap: 5%;
-    }
-    #authorbox {
-        margin-top: 15px;
-        margin-bottom:15px;
-    }
+  .maincontent h2 {
+    font-size: 18px;
+  }
+  .maincontent h3 {
+    font-size: 14px;
+  }
+  .maincontent img {
+    height: 300px;
+  }
+  .staggered {
+    gap: 5%;
+  }
+  #authorbox {
+    margin: 15px 0;
+  }
 
-    img {
-        margin-bottom:15px;
-    }
+  img {
+    margin-bottom: 15px;
+  }
 }

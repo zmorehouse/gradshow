@@ -2,6 +2,7 @@
 These include both the generic styling of fonts, colours, etc. alongside the styling of reused templates (Header, Footer and CTA) */
 
 /* Styling for reusable templates */
+/* Header styling */
 header,
 footer {
   display: flex;
@@ -13,7 +14,7 @@ footer {
 header {
   flex-wrap: wrap;
   background-color: transparent;
-  margin-bottom:-150px;
+  margin-bottom: -150px;
 }
 
 header a,
@@ -35,14 +36,109 @@ footer a:hover {
   padding-right: 7%;
   width: 100%;
   display: flex;
-  z-index: 999
+  z-index: 999;
 }
 
-.mobilenav {
-  display:none;
+.cloned {
+  visibility: hidden;
+}
+
+.mainnav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.mainnav ul {
+  display: flex;
+  align-items: center;
+}
+
+.mainnav li {
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.4s;
+}
+
+.mainnav a {
+  color: white;
+  font-size: 30px;
+  font-family: "Bebas Neue";
+  font-weight: 100;
+}
+
+.mainnav li:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.mainnav i {
+  display: none;
+}
+
+.graduatesbutton {
+  padding: 10px 20px 10px 20px;
+  font-size: 26px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+  text-decoration: none;
+  display: flex;
+}
+
+.graduatesbutton:hover {
+  color: white !important;
+  background-color: #bd830e;
+  transform: scale(1);
+}
+
+.menulogo {
+  width: 17.5% !important;
+  all: unset;
+  filter: unset;
+  cursor: pointer;
+}
+
+.menulogo:hover {
+  all: unset;
+  cursor: pointer;
+}
+
+.menulogo img {
+  width: 100%;
+}
+
+/* Event Details Styling */
+
+.eventdetails div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.eventdetails i {
+  padding-right: 15px;
+}
+
+.eventdetails p {
+  color: white;
+  font-weight: 500;
+}
+
+.eventdetails {
+  background-color: #bd830e;
+  flex-direction: row-reverse;
 }
 
 /* Hamburger Menu Styling */
+.mobilenav {
+  display: none;
+}
 
 .mobilenav {
   width: max-content;
@@ -51,9 +147,8 @@ footer a:hover {
 }
 
 .mobilenav .checkbox {
-display:none;
+  display: none;
 }
-
 
 .mobilenav .checkbox:checked ~ .pulloutmenu {
   transform: translateX(0%);
@@ -94,6 +189,7 @@ display:none;
   margin-top: 10px;
 }
 
+/* Pullout Menu Styling */
 .pulloutmenu {
   position: fixed;
   left: 0;
@@ -105,131 +201,47 @@ display:none;
   background: black;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
-  display:flex;
-  flex-direction:column;
-  padding-right:50px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
 }
 
 .pulloutmenu a {
-  font-size:45px !important;
+  font-size: 45px !important;
 }
 
 .pulloutmenu .logo {
-  width:20%;
-  filter:unset;
-  margin-top:15px;
+  width: 20%;
+  filter: unset;
+  margin-top: 15px;
 }
 
 .pulloutmenu ul {
-  display:flex;
-  flex-direction:column;
-  margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
-
 .pulloutmenu hr {
-  width:100%;
-  color:#bd830e;
-  margin-top:15px;
+  width: 100%;
+  color: #bd830e;
+  margin-top: 15px;
 }
 
 .pulloutmenu nav li {
-  width:100%;
-}
-
-.pullouteventdetails {
-  margin-top:auto;
-  margin-bottom:75px;
-}
-
-.pullouteventdetails p {
-  font-weight:500;
-
-}
-
-
-.cloned {
-  visibility: hidden;
-}
-
-.eventdetails {
-  background-color: #bd830e;
-  flex-direction: row-reverse;
-}
-
-.mainnav {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
-}
-
-.mainnav ul {
-  display: flex;
-  align-items: center;
-}
-
-.mainnav li {
-  padding-left: 10px;
-  padding-right: 10px;
-  transition: 0.4s;
-}
-
-.mainnav a {
-  color: white;
-  font-size: 30px;
-  font-family: "Bebas Neue";
-  font-weight: 100;
-}
-
-.mainnav li:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
-}
-
-.graduatesbutton {
-  padding: 10px 20px 10px 20px;
-  font-size: 26px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  text-transform: uppercase;
-  transition: 0.4s;
-  text-decoration: none;
-  display: flex;
-}
-
-.graduatesbutton:hover {
-  color: white !important;
-  background-color: #bd830e;
-  transform: scale(1);
-}
-
-.eventdetails div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 25px;
-}
-
-.eventdetails i {
-  padding-right: 15px;
-}
-
-.eventdetails p {
-  color: white;
-  font-weight: 500;
-}
-
-.menulogo {
-  width: 17.5% !important;
-}
-
-.menulogo img {
   width: 100%;
 }
 
+.pullouteventdetails {
+  margin-top: auto;
+  margin-bottom: 75px;
+}
+
+.pullouteventdetails p {
+  font-weight: 500;
+}
+
+/* Footer Styling */
 footer {
   padding: 2% 7% 2% 7%;
   align-items: start;
@@ -315,16 +327,11 @@ footer a:hover i {
   transform: scale(0.7);
 }
 
-footer svg {
-  width: 100%;
-  height: 50px;
-}
-
 #tagline {
   font-size: 13px;
 }
 
-/* CTA Styling */
+/* Call To Action Styling */
 .calltoaction {
   display: flex;
   flex-direction: row;
@@ -377,34 +384,59 @@ footer svg {
 }
 
 .calltoaction .responsive {
-  display:none;
-}
-
-.mainnav i {
   display: none;
 }
 
-
-
-
-
-.menulogo {
-  all: unset;
-  filter: unset;
-  cursor: pointer;
-}
-
-.menulogo:hover {
-  all: unset;
-  cursor: pointer;
-}
-
 /* General Styling */
-
 body {
   margin: 0px;
 }
 
+.maincontent {
+  padding: 4% 7% 4% 7%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 100;
+}
+
+#highlighttext {
+  color: #bd830e;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.pagetitle {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 12%;
+  padding-bottom: 0px;
+  background-color: black;
+  color: white;
+}
+
+.pagetitle h1 {
+  font-size: clamp(55px, 7vw, 100px);
+}
+
+/* Button Styling */
 a {
   border-radius: 0;
   border-style: solid;
@@ -440,45 +472,6 @@ a:hover i {
   transition: 0.4s;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0px;
-  margin: 0px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Bebas Neue";
-  font-size: 80px;
-  margin: 0px;
-  padding: 0px;
-  font-weight: 100;
-}
-
-p {
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 100;
-}
-
-#highlighttext {
-  color: #bd830e;
-}
-
-.pagetitle {
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 12%;
-  padding-bottom: 0px;
-  background-color: black;
-  color: white;
-}
-
-.pagetitle h1 {
-  font-size: clamp(55px, 7vw, 100px);}
-
 .desktop {
   display: flex;
 }
@@ -487,23 +480,18 @@ p {
   display: none !important;
 }
 
-.maincontent {
-  padding: 4% 7% 4% 7%;
-}
-
-
-
-/* Large Laptop Sizing */
+/* Responsive Views */
+/* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
   .calltoaction .responsive {
-    display:flex;
+    display: flex;
   }
 
   .calltoaction .large {
-    display:none;
+    display: none;
   }
   .pagetitle {
-    padding-top:15% !important;
+    padding-top: 15% !important;
   }
 
   .calltoaction h2 {
@@ -511,32 +499,26 @@ p {
   }
 
   .calltoaction a {
-    width:250px;
-    font-size:22px;
+    width: 250px;
+    font-size: 22px;
   }
-
-
-
-
 }
 
 /* Optimal breaking point for hamburger menu */
 @media only screen and (max-width: 1170px) {
   .mobilenav {
-    display:block;
-
+    display: block;
   }
   .desktopnav {
-    display:none;
+    display: none;
   }
 
   .menulogo {
-    width:30% !important;
+    width: 30% !important;
   }
-
 }
 
-/* Small Laptop Sizing */
+/* Small Laptop Sizing (1024px and below) */
 @media only screen and (max-width: 1024px) {
   .calltoaction {
     flex-wrap: wrap;
@@ -558,42 +540,43 @@ p {
 
   .calltoaction > div:nth-of-type(3) {
     margin-left: 0px;
-    width:100%;
-    display:flex;
-    flex-direction:row;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap:15px;
+    gap: 15px;
   }
 
   .pagetitle {
-    padding-top:20% !important;
+    padding-top: 20% !important;
   }
 
   footer > div {
-    width:48%;
+    width: 48%;
   }
 
   footer {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
 
-  .mainnav, .eventdetails {
-    padding-top:15px;
-    padding-bottom:15px;
-    justify-content:space-between;
+  .mainnav,
+  .eventdetails {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
   }
 
-  .mainnav, .eventdetails p {
-    font-size:14px;
+  .mainnav,
+  .eventdetails p {
+    font-size: 14px;
   }
 
   .mainnav {
     padding-top: 25px;
   }
-
 }
 
-/* Tablet Sizing */
+/* Tablet Sizing (768px and below) */
 @media only screen and (max-width: 768px) {
   footer {
     flex-wrap: wrap;
@@ -627,13 +610,13 @@ p {
     top: 0%;
     justify-content: space-between;
     overflow: hidden;
-    align-items:center;
+    align-items: center;
     border-style: solid;
     border-width: 0px;
     border-bottom-width: 15px !important;
     border-color: #bd830e;
-    padding-top:35px;
-    padding-bottom:35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
   .mainnav svg {
     width: 40%;
@@ -652,27 +635,24 @@ p {
     padding-right: 7%;
   }
 
-
   footer {
-    gap:0px !important;
+    gap: 0px !important;
   }
 
   .calltoaction > div:nth-of-type(3) {
-    flex-wrap:wrap;
-  
-    
+    flex-wrap: wrap;
   }
 
   .eventdetails {
-    display:none; 
+    display: none;
   }
 
   .calltoaction .responsive {
-    margin-bottom:15px;
+    margin-bottom: 15px;
   }
 
   .calltoaction a {
-    margin:0px;
+    margin: 0px;
   }
   .menulogo {
     display: flex;
@@ -682,15 +662,14 @@ p {
   }
 }
 
-/* Phone Sizing */
+/* Phone Sizing (480px and below) */
 @media only screen and (max-width: 480px) {
-
   .menulogo {
-    width:50% !important;
+    width: 50% !important;
   }
 
   footer h3 {
-    font-size:30px !important;
+    font-size: 30px !important;
   }
 }
 
@@ -698,6 +677,3 @@ p {
   width: 30px;
   height: 26px;
 }
-
-
-

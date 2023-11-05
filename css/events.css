@@ -1,163 +1,158 @@
-
-.eventlist {
-    margin-top:25px;
-    display:flex;
-    column-gap:75px;
-    row-gap:25px;
-    flex-wrap: wrap;
-    justify-content:space-between;
+/* Events Page Styling */
+/* Main Content Styling */
+.maincontent h2 {
+  font-size: clamp(40px, 5vw, 80px);
 }
 
+.maincontent a {
+  color: #bd830e !important;
+  text-decoration: underline;
+  padding-left: 15px;
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.eventlist {
+  margin-top: 25px;
+  display: flex;
+  column-gap: 75px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Individual Event Styling */
 .event {
-    width:28%;
-    padding-top:25px;
-    padding-bottom:25px;
-    border-style:solid;
-    border-width:2px 0px 0px 0px;
-    border-color:#BD830E;
+  width: 28%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: #bd830e;
 }
 
 .eventinfo {
-    display:flex;
-    flex-wrap:nowrap;
-    align-items:center;
-    justify-content:space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .event h3 {
-    font-size:26px !important;
-    font-family:'Open Sans';
-    font-weight:300;
-
-    
-}
-
-.maincontent h2 {
-    font-size:clamp(40px, 5vw, 80px)
-
+  font-size: 26px !important;
+  font-family: "Open Sans";
+  font-weight: 300;
 }
 
 .date {
-    width:25%;
-    margin-right:25px;
+  width: 25%;
+  margin-right: 25px;
 }
 
 .date p {
-    font-family:'Bebas Neue';
-    font-size:38px;
-    padding:0px;
-    margin:0px;
+  font-family: "Bebas Neue";
+  font-size: 38px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .date p:nth-child(2) {
-    font-size:50px;
-    color:#BD830E;
-    font-weight:700;
-    margin-top:-10px;
+  font-size: 50px;
+  color: #bd830e;
+  font-weight: 700;
+  margin-top: -10px;
 }
 
+/* Past Events Styling */
 .pastevents {
-    background-color:#313131;
-    color:white;
-}
-
-.maincontent  a {
-    color:#BD830E !important;
-    text-decoration:underline;
-    padding-left:15px;
-    background-color:transparent;
-    border-style:none;
-    padding:0;
-    font-family:'Open Sans';
-    font-size:18px;
+  background-color: #313131;
+  color: white;
 }
 
 /* Responsive Views */
-/* Responsive Views */
-/* Large Laptop Sizing */
+/* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
-    .event {
-        width: 40%;
-    }
+  .event {
+    width: 40%;
+  }
 
-    .eventlist {
-        gap:25px;
-    }
+  .eventlist {
+    gap: 25px;
+  }
 }
 
-/* Small Laptop Sizing */
+/* Small Laptop Sizing (1024px and below) */
 @media only screen and (max-width: 1024px) {
-    .event {
-        width: 100%;
-    }
+  .event {
+    width: 100%;
+  }
 
-    .event h3 {
-        font-size: 22px !important;
-    }
+  .event h3 {
+    font-size: 22px !important;
+  }
 
-    .date {
-        width: 30%;
-        margin-right: 15px;
-    }
+  .date {
+    width: 30%;
+    margin-right: 15px;
+  }
 
-    .date p {
-        font-size: 30px;
-    }
+  .date p {
+    font-size: 30px;
+  }
 
-    .date p:nth-child(2) {
-        font-size: 42px;
-    }
+  .date p:nth-child(2) {
+    font-size: 42px;
+  }
 }
 
-/* Tablet Sizing */
+/* Tablet Sizing (768px and below) */
 @media only screen and (max-width: 768px) {
+  .event {
+    width: 100%;
+  }
 
-
-    .event {
-        width: 100%;
-    }
-
-    .event h3 {
-        font-size: 18px !important;
-    }
-
-
+  .event h3 {
+    font-size: 18px !important;
+  }
 }
 
-/* Phone Sizing */
+/* Phone Sizing (480px and below) */
 @media only screen and (max-width: 480px) {
-    .eventlist {
-        column-gap: 10px;
-        row-gap: 10px;
-    }
+  .maincontent a {
+    font-size: 16px;
+  }
+  .eventlist {
+    column-gap: 10px;
+    row-gap: 10px;
+  }
 
-    .event {
-        width: 100%;
-        padding: 15px 0;
-    }
+  .event {
+    width: 100%;
+    padding: 15px 0;
+  }
 
-    .event h3 {
-        font-size: 16px !important;
-    }
+  .event h3 {
+    font-size: 16px !important;
+  }
 
-    .date {
-        width: 40%;
-        margin-right: 10px;
-    }
+  .date {
+    width: 40%;
+    margin-right: 10px;
+  }
 
-    .date p {
-        font-size: 24px;
-    }
+  .date p {
+    font-size: 24px;
+  }
 
-    .date p:nth-child(2) {
-        font-size: 36px;
-    }
+  .date p:nth-child(2) {
+    font-size: 36px;
+  }
 
-    .maincontent a {
-        font-size: 16px;
-    }
-    .pastevents {
-        padding-top:50px;
-        padding-bottom:50px;
-    }
+  .pastevents {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

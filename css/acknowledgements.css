@@ -1,3 +1,5 @@
+/* Acknowledgements Page Styling */
+/* Main Content Styling */
 .maincontent {
     display:flex;
     align-items:center;
@@ -22,12 +24,7 @@ img {
 }
 
 /* Responsive Views */
-/* Large Laptop Sizing */
-@media only screen and (max-width: 1368px) {
-    
-}
-
-/* Small Laptop Sizing */
+/* Small Laptop Sizing (1024px and below) */
 @media only screen and (max-width: 1024px )   {
     .maincontent > div {
         width:100% !important;
@@ -44,15 +41,5 @@ img {
     .maincontent > div:nth-of-type(2) {
         padding:0px;
     }
-}
-
-/* Tablet Sizing */
-@media only screen and (max-width: 768px)   {
-
-}
-
-/* Phone Sizing */
-@media only screen and (max-width: 480px) {
-
 }
 
