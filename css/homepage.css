@@ -51,100 +51,114 @@ body {
   overflow: hidden;
 }
 
-
-/* Main */
-main {
-  display: flex;
-  flex-direction: column;
-  height: 94vh;
-  margin-top: -130px;
-  padding-left: 7%;
-  padding-right: 7%;
-  justify-content: center;
-  background-color: black;
-  overflow: hidden;
-}
-
-main > * {
-  color: white;
-}
-
 .hero-slider {
-  display: flex;
-  transition: transform 0.5s; /* Add a transition for smooth sliding */
+  display:flex;
+  width:300vw;
 
 }
 
 .landing-slide {
-  flex: 0 0 100%;
-  position: relative;
+  width:100vw;
+  height:85vh;
+  object-fit:cover;
+  background-repeat:no-repeat;
+  display:flex;
+
 }
 
-.landing-slide:nth-child(1) {
-    background-image: url('/images/graduateworks/adeline-jeffery.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .landing-slide:nth-child(2) {
-    background-color: #EAEAEA; /* Change to your desired background color */
-  }
-  
-  .landing-slide:nth-child(3) {
-    background-image: url('/images/graduateworks/adeline-jeffery.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-.slide-content {
+.pagination-dots {
   position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.slide-content#one {
- 
-  left: 17.5%;
-  text-align: left;
-  position: absolute;
+  bottom: 15vh;
+  left: 125px;
+  display: flex;
+  gap: 5px;
 
 }
 
-.slide-content#two {
-
-  left: 50%;
-  text-align: center;
-  position: absolute;
-
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s; /* Added width transition */
 }
 
-.slide-content#three {
-
-  right: -17.5%;
-  text-align: right;
+.dot.active {
+  background-color: #333;
+  width: 30px; /* Adjust the width for the long circle effect */
+  border-radius: 20px; /* Ensures it remains a circle */
 }
 
-.slide-content h2 {
-    font-size:100px;
-    margin-bottom:-20px !important
+
+
+.landing-slide#one {
+  background-image: url('/images/hero-image-1.png');
+  color:white;
+  align-items:center;
 }
 
 .slide-content p {
-    font-size: 20px;
-    margin:10px;
+  margin:5px;
+}
+
+
+.slide-content h2 {
+  padding:0px;
+  margin-bottom:-15px;
 }
 
 .slide-content a {
-    margin-left:5px;
-    margin-right:5px;
+  margin-top:25px;
+  width:200px;
 }
 
-.slide-content p:nth-child(3) {
-    margin-bottom:40px;
-    font-weight:500;
-    text-transform:uppercase;
+
+.landing-slide#one .slide-content {
+  padding-top:150px;
+  padding-left:125px;
+  align-items:left;
+  display:flex;
+  flex-direction:column;
 }
+
+.landing-slide#two {
+  background-image: url('/images/hero-image-2.png');
+  color:black;
+  align-items:center;
+  justify-content:end;
+
+}
+
+
+.landing-slide#two .slide-content {
+  padding-top:150px;
+  padding-right:125px;
+  display:flex;
+  flex-direction:column;
+  align-items:end;
+  gap:0px;
+}
+
+.landing-slide#three {
+  background-image: url('/images/hero-image-3.png');
+  color:white;
+  align-items:center;
+  justify-content:center;
+}
+
+
+.landing-slide#three .slide-content {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  gap:0px;
+
+}
+
+
+
 
 /* Important Info */
 .importantinfo {
@@ -397,6 +411,19 @@ figcaption {
     padding-left:15%;
     padding-right:15%;
   }
+
+  .landing-slide#one {
+    background-position:50%;
+  }
+  
+
+
+  
+  .landing-slide#three {
+    background-position:center;
+  }
+  
+  
 }
 
 /* Small Laptop Sizing */
@@ -409,10 +436,55 @@ figcaption {
 
   }
 
+  .landing-slide {
+    align-items:center !important;
+    justify-content:center !important;
+  }
+  
+  .landing-slide .slide-content {
+    align-items:center !important;
+    color:white;
+    padding:50px 25px 50px 25px !important;
+    border-radius:5px;
+    background-color:rgba(0, 0, 0, 0.612);
+    width:75vw;
+  }
+  .pagination-dots {
+    left:45% !important;
+    bottom: 20% !important;
+
+  }
+
 }
 
 /* Tablet Sizing */
 @media only screen and (max-width: 768px)   {
+
+  .dot {
+    background-color:white;
+
+  }
+
+  .dot.active {
+    background-color:rgb(187, 187, 187);
+
+  }
+  .landing-slide#one {
+    background-position:85%;
+  }
+  
+  .landing-slide#two {
+    background-position:left;
+  }
+
+  
+
+
+  
+  .landing-slide#three {
+    background-position:center;
+  }
+  
   .carousel-item {
     width: calc(100vw / 2);
   }
@@ -446,6 +518,9 @@ figcaption {
 
 /* Phone Sizing */
 @media only screen and (max-width: 480px) {
+  .landing-slide {
+    height:85vh;
+  }
   .carousel-item img {
     height:300px;
   }
