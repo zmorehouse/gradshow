@@ -285,9 +285,10 @@ figcaption {
 .about div:first-child {
   padding-right: 7%;
 }
-
-.about div:first-child p {
-  padding-bottom: 25px !important;
+.about a {
+  display: flex;
+  width: 50%;
+  margin-top:15px;
 }
 
 /* Sponsor Section Styling */
