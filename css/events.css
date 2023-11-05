@@ -2,9 +2,10 @@
 .eventlist {
     margin-top:25px;
     display:flex;
-    column-gap:100px;
+    column-gap:75px;
     row-gap:25px;
     flex-wrap: wrap;
+    justify-content:space-between;
 }
 
 .event {
@@ -27,6 +28,12 @@
     font-size:26px !important;
     font-family:'Open Sans';
     font-weight:300;
+
+    
+}
+
+.maincontent h2 {
+    font-size:clamp(40px, 5vw, 80px)
 
 }
 
@@ -58,44 +65,99 @@
     color:#BD830E !important;
     text-decoration:underline;
     padding-left:15px;
+    background-color:transparent;
+    border-style:none;
+    padding:0;
+    font-family:'Open Sans';
+    font-size:18px;
 }
 
 /* Responsive Views */
+/* Responsive Views */
 /* Large Laptop Sizing */
 @media only screen and (max-width: 1368px) {
-    
+    .event {
+        width: 40%;
+    }
+
+    .eventlist {
+        gap:25px;
+    }
 }
 
 /* Small Laptop Sizing */
-@media only screen and (max-width: 1024px )   {
-
-}
-
-/* Tablet Sizing */
-@media only screen and (max-width: 768px)   {
-    .maincontent h2 {
-        font-size:20px !important;
-        font-family:'Open Sans';
-        text-transform:uppercase;
-        font-weight:600;
-    }
-
+@media only screen and (max-width: 1024px) {
     .event {
-        width:100%;
+        width: 100%;
     }
 
     .event h3 {
-        font-size:20px !important;
-        font-family:'Open Sans';
-        font-weight:300;
+        font-size: 22px !important;
     }
 
-    .pastevents {
-        padding-top:50px !important;
+    .date {
+        width: 30%;
+        margin-right: 15px;
     }
+
+    .date p {
+        font-size: 30px;
+    }
+
+    .date p:nth-child(2) {
+        font-size: 42px;
+    }
+}
+
+/* Tablet Sizing */
+@media only screen and (max-width: 768px) {
+
+
+    .event {
+        width: 100%;
+    }
+
+    .event h3 {
+        font-size: 18px !important;
+    }
+
+
 }
 
 /* Phone Sizing */
 @media only screen and (max-width: 480px) {
+    .eventlist {
+        column-gap: 10px;
+        row-gap: 10px;
+    }
 
+    .event {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .event h3 {
+        font-size: 16px !important;
+    }
+
+    .date {
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .date p {
+        font-size: 24px;
+    }
+
+    .date p:nth-child(2) {
+        font-size: 36px;
+    }
+
+    .maincontent a {
+        font-size: 16px;
+    }
+    .pastevents {
+        padding-top:50px;
+        padding-bottom:50px;
+    }
 }

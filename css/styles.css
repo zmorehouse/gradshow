@@ -267,17 +267,17 @@ footer svg {
   justify-content: space-between;
 }
 
+.calltoaction .responsive {
+  display:none;
+}
+
 .mainnav i {
   display: none;
 }
 
-.calltoaction .desktop {
-  flex-wrap: wrap !important;
-}
 
-.calltoaction .desktop > div {
-  width: 100%;
-}
+
+
 
 .menulogo {
   all: unset;
@@ -368,8 +368,7 @@ p {
 }
 
 .pagetitle h1 {
-  font-size: 100px;
-}
+  font-size: clamp(55px, 7vw, 100px);}
 
 .desktop {
   display: flex;
@@ -383,22 +382,17 @@ p {
   padding: 4% 7% 4% 7%;
 }
 
-/* Responsive Views */
-@media only screen and (max-width: 768px) {
-  .desktop {
-    display: none !important;
-  }
-  .mobile {
-    display: flex;
-  }
 
-  .maincontent {
-    padding: 0% 7% 7% 7% !important;
-  }
-}
 
 /* Large Laptop Sizing */
 @media only screen and (max-width: 1368px) {
+  .calltoaction .responsive {
+    display:flex;
+  }
+
+  .calltoaction .large {
+    display:none;
+  }
 }
 
 /* Small Laptop Sizing */
@@ -423,7 +417,14 @@ p {
 
   .calltoaction > div:nth-of-type(3) {
     margin-left: 0px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:15px;
   }
+
+
 }
 
 /* Tablet Sizing */
@@ -445,10 +446,6 @@ p {
     color: black;
     display: flex;
     margin-top: 50px;
-  }
-
-  .pagetitle h1 {
-    font-size: 55px;
   }
 
   .mainnav {
@@ -491,6 +488,20 @@ p {
   footer svg {
     width: 100%;
     padding-bottom: 25px;
+  }
+
+  .calltoaction > div:nth-of-type(3) {
+    flex-wrap:wrap;
+  
+    
+  }
+
+  .calltoaction .responsive {
+    margin-bottom:15px;
+  }
+
+  .calltoaction a {
+    margin:0px;
   }
 }
 

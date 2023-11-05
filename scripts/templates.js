@@ -11,7 +11,7 @@ function insertHeader() {
     }
 
     var content = `
-    <section class="eventdetails desktop">
+    <section class="eventdetails">
     <div>
         <i class="fa-solid fa-clock" style="color: #ffffff;"></i>
         <p> ANU, BUILDING 105, CHILDERS STREET </p>
@@ -27,7 +27,7 @@ function insertHeader() {
 
     </a>
 
-    <nav class="desktop">
+    <nav>
         <ul>
             <li> <a href="index.html"> Home </a> </li>
             <li> <a href="about.html"> About </a> </li>
@@ -124,7 +124,7 @@ function insertCallToAction() {
     }
 
     var content = `
-    <div class="desktop">
+    <div class="large">
     <div id="ctaright">
         <h2> Browse Our List Of <span id="highlighttext">2023 Graduates </span></h2>
     </div>
@@ -132,7 +132,7 @@ function insertCallToAction() {
         <h2> Or, See Their Work In Person! </h2>
     </div>
 </div>
-<div class="mobile">
+<div class="responsive">
     <h2> Browse Our List Of <span id="highlighttext">2023 Graduates </span> Or, See Their Work In Person! </h2>
 
 </div>

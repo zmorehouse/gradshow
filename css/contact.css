@@ -88,18 +88,20 @@ textarea {
     background-color:#F2F2F2;
 }
 
-a {
+.contactinfo a {
     all: unset;
     transition:0.25s;
+    display:flex;
+    align-items:center;
 }
 
-a:hover {
+.contactinfo a:hover {
 background-color:transparent;
     color:#BD830E;
     cursor:pointer;
 }
 
-a:hover i {
+.contactinfo a:hover i {
     transform:unset;
 }
 
@@ -139,7 +141,7 @@ transition:0.4s;
 }
 
 .exhibitioninfo h2 {
-    font-size:50px;
+    font-size:clamp(30px, 5vw, 50px);
 }
 
 
@@ -166,59 +168,122 @@ hr {
 }
 
 /* Responsive Views */
-/* Large Laptop Sizing */
+/* Large Laptop Sizing (1368px and below) */
 @media only screen and (max-width: 1368px) {
-    
-}
-
-/* Small Laptop Sizing */
-@media only screen and (max-width: 1024px )   {
-
-}
-
-/* Tablet Sizing */
-@media only screen and (max-width: 768px)   {
     .maincontent {
-        display:flex;
-        flex-wrap:wrap;
-        gap:25px;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
-    .maincontent div {
-        width:100%;
-        padding:0px;
+    .contactform {
+        width: 100%;
+        padding-right: 0;
     }
 
     .contactinfo {
-        padding:25px !important;
-        padding-top:50px;
-        padding-bottom:50px;
-
+        width: 100%;
+        padding: 25px !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
     }
 
     .exhibitioninfo {
-        padding-top:35px !important;
-        padding-bottom:25px;
-        gap:0px;
-    }
-
-    .exhibitioninfo > * {
-        width:100%;
-
-    }
-
-    .exhibitioninfo p {
-        margin-top:10px !important;
-    }
-
-    .exhibitioninfo i {
-        margin-right:15px;
+        width: 100%;
+        padding-top: 35px !important;
+        padding-bottom: 25px;
+        gap: 0;
     }
 }
 
-/* Phone Sizing */
-@media only screen and (max-width: 480px) {
+/* Small Laptop Sizing (1024px and below) */
+@media only screen and (max-width: 1024px) {
+    .contactform {
+        width: 100%;
+        padding-right: 0;
+    }
 
+    .contactinfo {
+        width: 100%;
+        padding: 25px !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .exhibitioninfo {
+        width: 100%;
+        padding-top: 35px !important;
+        padding-bottom: 25px;
+        gap: 0;
+    }
+}
+
+/* Tablet Sizing (768px and below) */
+@media only screen and (max-width: 768px) {
+    .maincontent {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .contactform {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contactinfo {
+        width: 100%;
+        padding: 25px !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .exhibitioninfo {
+        width: 100%;
+        padding-top: 35px !important;
+        padding-bottom: 25px;
+        gap: 0;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .exhibitioninfo > * {
+        width: 100%;
+    }
+
+}
+
+/* Phone Sizing (480px and below) */
+@media only screen and (max-width: 480px) {
+    .maincontent {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contactform {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contactinfo {
+        width: 100%;
+        padding: 25px !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .exhibitioninfo {
+        width: 100%;
+        padding-top: 35px !important;
+        padding-bottom: 25px;
+        gap: 0;
+    }
 }
 
 

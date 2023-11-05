@@ -1,3 +1,7 @@
+h2 {
+  font-size: clamp(55px, 7vw, 100px);
+}
+
 .preloader {
   height: 100vh;
   position: absolute;
@@ -371,20 +375,82 @@ figcaption {
 /* Responsive Views */
 /* Large Laptop Sizing */
 @media only screen and (max-width: 1368px) {
-    
+
+  .carousel-item {
+    width: calc(100vw / 4);
+  }
+
+  .supportboxes a {
+    width:90%;
+  }
+
+  .about div:first-child {
+    width:70%;
+  }
+
+  .about img {
+    height:400px;
+    object-fit:cover;
+  }
 }
 
 /* Small Laptop Sizing */
 @media only screen and (max-width: 1024px )   {
+  .supportboxes {
+    flex-wrap:wrap;
+  }
+  .supportboxes > div {
+    width:100%;
 
+  }
 }
 
 /* Tablet Sizing */
 @media only screen and (max-width: 768px)   {
+  .carousel-item {
+    width: calc(100vw / 2);
+  }
   
+  .about {
+    flex-wrap:wrap;
+    gap:30px
+  }
+
+  .about > div, .about div:first-child {
+    width:100%;
+    padding:0px;
+    
+  }
+
+  .sponsors {
+    gap:15px;
+  }
+
+  .logo {
+    width:75%;
+  }
+  .support p {
+    width:100%;
+  }
 }
 
 /* Phone Sizing */
 @media only screen and (max-width: 480px) {
+  .carousel-item img {
+    height:300px;
+  }
 
+  .carousel-item h3 {
+    font-size:26px !important;
+  }
+
+  .carousel-item p {
+    font-size:16px;
+  }
+  
+
+  
+  .support, .about, .graduateslist {
+    padding-top:50px;
+  }
 }
